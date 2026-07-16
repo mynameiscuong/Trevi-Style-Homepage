@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Register Custom Snippets in Website Editor Panel -->
+    <template id="snippets" inherit_id="website.snippets" priority="8">
+        <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+            <!-- Trevi Style Custom Snippets -->
+            <t t-snippet="theme_evo_fashion.s_hero_slider" string="Hero Slider" group="custom">
+                <keywords>banner, hero, slider, carousel, intro</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_category_section" string="Category Carousel" group="custom">
+                <keywords>categories, navigation, menu, icons</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_flash_sale" string="Flash Sale" group="custom">
+                <keywords>sale, discount, countdown, timer, promotion</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_coupon_section" string="Coupon Section" group="custom">
+                <keywords>coupon, discount, voucher, code, promotion</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_fashion_banners" string="Fashion Banners" group="custom">
+                <keywords>banners, columns, grid, fashion, promotion</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_promo_banner" string="Promo Banner" group="custom">
+                <keywords>promo, promotion, discount, banner, coupon</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_product_tabs" string="Product Tabs Grid" group="custom">
+                <keywords>products, grid, catalog, shop, listing</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_bottom_banner" string="Bottom Banner" group="custom">
+                <keywords>banner, columns, grid, promotion</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_handmade_collection" string="Handmade Collection" group="custom">
+                <keywords>handmade, collection, products, banner, handmade section</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_collection" string="Product Collection" group="custom">
+                <keywords>collection, products, you may like, recommendations</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_blog_grid" string="Blog Grid" group="custom">
+                <keywords>blog, news, articles, posts, grid</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_instagram" string="Instagram Feed" group="custom">
+                <keywords>instagram, social, feed, gallery, photos</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_feedback" string="Customer Feedback" group="custom">
+                <keywords>feedback, testimonials, reviews, customers</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_intro" string="Brand Intro" group="custom">
+                <keywords>intro, brand, story, about, description</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_policy" string="Policy Features" group="custom">
+                <keywords>policy, features, shipping, support, payment</keywords>
+            </t>
+            <t t-snippet="theme_evo_fashion.s_service_features" string="Service Features" group="custom">
+                <keywords>services, features, icons, shipping, support</keywords>
+            </t>
+        </xpath>
+    </template>
+</odoo>

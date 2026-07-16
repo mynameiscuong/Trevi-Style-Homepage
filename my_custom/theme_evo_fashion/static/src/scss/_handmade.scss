@@ -1,0 +1,280 @@
+// ============================================
+// Handmade Collection Section
+// ============================================
+
+.s_handmade_collection {
+    padding: 50px 0;
+    background-color: #f8f4ef;
+
+    .box_index_product {
+        .row {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+    .handmade-banner {
+        height: 100%;
+
+        a {
+            display: block;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .box_content {
+        padding: 0 15px;
+    }
+
+    .sectionHeading {
+        margin-bottom: 30px;
+
+        h3 {
+            margin-bottom: 10px;
+
+            a {
+                font-size: 24px;
+                font-weight: 700;
+                color: #252a2b;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #8e8270;
+                }
+            }
+        }
+
+        .descrip_content {
+            font-size: 14px;
+            color: #757575;
+            line-height: 1.6;
+        }
+    }
+
+    .sectionContent {
+        .slider-product-one {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 10px;
+
+            &::-webkit-scrollbar {
+                height: 4px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 4px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #8e8270;
+                border-radius: 4px;
+            }
+        }
+
+        .item-products {
+            flex: 0 0 calc(33.333% - 10px);
+            min-width: 0;
+        }
+    }
+
+    // Product card styles
+    .product-loop {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: box-shadow 0.3s;
+
+        &:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-inner {
+            position: relative;
+        }
+    }
+
+    .proloop-image {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 1;
+
+        .pro-sale {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            z-index: 2;
+            background: #ff0000;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .product--image {
+            a {
+                display: block;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    transition: transform 0.3s;
+                }
+            }
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+
+            .product-placeholder-img {
+                width: 100%;
+                aspect-ratio: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .quickview-product {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 3;
+
+            a {
+                width: 40px;
+                height: 40px;
+                background: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+                transition: all 0.3s;
+
+                &:hover {
+                    background: #8e8270;
+                    color: #fff;
+                }
+
+                i, svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        &:hover .quickview-product {
+            opacity: 1;
+        }
+    }
+
+    .proloop-detail {
+        padding: 12px;
+
+        h3 {
+            margin-bottom: 8px;
+
+            a {
+                font-size: 13px;
+                font-weight: 500;
+                color: #252a2b;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                line-height: 1.4;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #8e8270;
+                }
+            }
+        }
+
+        .wrapper-action-loop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .proloop--price {
+            .price {
+                font-size: 15px;
+                font-weight: 700;
+                color: #ff0000;
+            }
+
+            .price-del {
+                font-size: 12px;
+                color: #9e9e9e;
+                text-decoration: line-through;
+                margin-left: 6px;
+            }
+
+            .pro-percent {
+                font-size: 11px;
+                color: #ff0000;
+                font-weight: 600;
+                margin-left: 4px;
+            }
+        }
+
+        .proloop-actions {
+            .btn-proloop-cart {
+                background: transparent;
+                border: 1px solid #252a2b;
+                border-radius: 4px;
+                padding: 6px 12px;
+                font-size: 11px;
+                font-weight: 600;
+                color: #252a2b;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    background: #252a2b;
+                    color: #fff;
+                }
+
+                .btnico {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // Responsive
+    @media (max-width: 1199px) {
+        .sectionContent .item-products {
+            flex: 0 0 calc(50% - 8px);
+        }
+    }
+
+    @media (max-width: 767px) {
+        .handmade-banner {
+            display: none;
+        }
+
+        .sectionContent .item-products {
+            flex: 0 0 calc(75% - 6px);
+        }
+    }
+}

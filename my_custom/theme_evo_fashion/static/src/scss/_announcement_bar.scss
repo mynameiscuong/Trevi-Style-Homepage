@@ -1,0 +1,52 @@
+// ============================================
+// Trevi Style - Announcement Bar
+// ============================================
+
+.trevi-announcement-bar {
+    background: #3d4445;
+    color: $white;
+    padding: 8px 0;
+    position: relative;
+    z-index: $z-sticky;
+    overflow: hidden;
+
+    .announcement-content {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        padding: 0 15px;
+        animation: announcementScroll 30s linear infinite;
+        white-space: nowrap;
+
+        .announcement-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+
+        .announcement-separator {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 10px;
+            opacity: 0.8;
+            color: $white;
+        }
+    }
+
+    &:hover .announcement-content {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes announcementScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

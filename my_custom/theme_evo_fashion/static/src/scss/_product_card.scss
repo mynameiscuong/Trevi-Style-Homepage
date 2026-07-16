@@ -1,0 +1,154 @@
+// ============================================
+// Trevi Style - Product Card
+// ============================================
+
+.product-card,
+.product-card-flash,
+.product-card-grid {
+    background: $white;
+    border-radius: $product-card-radius;
+    overflow: hidden;
+    transition: all $transition;
+    height: 100%;
+    border: 1px solid $gray-200;
+
+    &:hover {
+        box-shadow: $product-card-hover-shadow;
+        transform: translateY(-3px);
+        border-color: transparent;
+
+        .product-image-container .product-placeholder-img {
+            transform: scale(1.05);
+        }
+
+        .product-actions {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+
+    .product-image-container {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 1;
+
+        .product-placeholder-img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform $transition-slow;
+
+            i {
+                font-size: 40px;
+                opacity: 0.5;
+            }
+        }
+
+        .badge-sale {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: $accent-color;
+            color: $white;
+            padding: 4px 10px;
+            font-size: $font-size-xs;
+            font-weight: $font-weight-bold;
+            border-radius: $border-radius-sm;
+            z-index: 10;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-new {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: $primary-color;
+            color: $white;
+            padding: 4px 10px;
+            font-size: $font-size-xs;
+            font-weight: $font-weight-bold;
+            border-radius: $border-radius-sm;
+            z-index: 10;
+        }
+    }
+
+    .product-actions {
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all $transition;
+        transform: translateX(10px);
+
+        .btn-action {
+            width: 34px;
+            height: 34px;
+            border-radius: $border-radius-circle;
+            background: $white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all $transition;
+            box-shadow: $shadow-sm;
+            font-size: 13px;
+            color: $gray-700;
+
+            &:hover {
+                background: $primary-color;
+                color: $white;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 12px;
+
+        .product-name {
+            font-size: $font-size-sm;
+            font-weight: $font-weight-medium;
+            margin-bottom: 6px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 34px;
+
+            a {
+                color: $gray-800;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+
+            .current-price {
+                font-size: $font-size-base;
+                font-weight: $font-weight-bold;
+                color: $accent-color;
+            }
+
+            .original-price {
+                font-size: $font-size-xs;
+                color: $gray-500;
+                text-decoration: line-through;
+            }
+        }
+    }
+}

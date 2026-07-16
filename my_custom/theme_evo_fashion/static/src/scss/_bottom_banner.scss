@@ -1,0 +1,105 @@
+// ============================================
+// Trevi Style - Bottom Banner (2 Column)
+// ============================================
+
+.s_bottom_banner {
+    padding: 40px 0;
+    background: $white;
+
+    .bottom-banner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+        @media (max-width: $breakpoint-md) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .bottom-banner-item {
+        border-radius: $border-radius;
+        overflow: hidden;
+        cursor: pointer;
+
+        &.banner-image-top {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &.banner-content-top {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bottom-banner-image {
+            a {
+                display: block;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+                transition: transform $transition-slow;
+            }
+        }
+
+        .bottom-banner-content {
+            padding: 30px;
+            color: $secondary-color;
+
+            .banner-tag {
+                display: inline-block;
+                background: $accent-color;
+                color: $white;
+                padding: 4px 12px;
+                font-size: $font-size-xs;
+                font-weight: $font-weight-semibold;
+                border-radius: $border-radius-sm;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                width: fit-content;
+            }
+
+            .banner-title {
+                font-size: $font-size-2xl;
+                font-weight: $font-weight-bold;
+                margin-bottom: 6px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .banner-desc {
+                font-size: $font-size-sm;
+                margin-bottom: 12px;
+                line-height: 1.6;
+            }
+
+            .btn-banner {
+                background: $secondary-color;
+                color: $white;
+                padding: 8px 20px;
+                font-size: $font-size-sm;
+                font-weight: $font-weight-semibold;
+                border-radius: $border-radius-sm;
+                width: fit-content;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                transition: all $transition;
+
+                &:hover {
+                    background: $accent-color;
+                    color: $white;
+                }
+            }
+        }
+
+        &:hover {
+            .bottom-banner-image img {
+                transform: scale(1.03);
+            }
+        }
+    }
+}

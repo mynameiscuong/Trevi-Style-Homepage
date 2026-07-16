@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Product Categories - Trevi Style -->
+        <record id="category_dresses" model="product.public.category">
+            <field name="name">Đầm Nữ</field>
+            <field name="sequence" type="int">1</field>
+        </record>
+
+        <record id="category_tops" model="product.public.category">
+            <field name="name">Áo Nữ</field>
+            <field name="sequence" type="int">2</field>
+        </record>
+
+        <record id="category_bags" model="product.public.category">
+            <field name="name">Túi Xách</field>
+            <field name="sequence" type="int">3</field>
+        </record>
+
+        <record id="category_shoes" model="product.public.category">
+            <field name="name">Giày Dép</field>
+            <field name="sequence" type="int">4</field>
+        </record>
+
+        <record id="category_jewelry" model="product.public.category">
+            <field name="name">Phụ Kiện</field>
+            <field name="sequence" type="int">5</field>
+        </record>
+
+        <record id="category_knits" model="product.public.category">
+            <field name="name">Len Nữ</field>
+            <field name="sequence" type="int">6</field>
+        </record>
+
+        <record id="category_scarves" model="product.public.category">
+            <field name="name">Khăn</field>
+            <field name="sequence" type="int">7</field>
+        </record>
+
+        <record id="category_hats" model="product.public.category">
+            <field name="name">Mũ</field>
+            <field name="sequence" type="int">8</field>
+        </record>
+
+        <record id="category_gloves" model="product.public.category">
+            <field name="name">Găng Tay</field>
+            <field name="sequence" type="int">9</field>
+        </record>
+
+        <!-- Flash Sale Products -->
+        <record id="product_dam_suong_tay_beo" model="product.template">
+            <field name="name">Đầm Suông Tay Bèo Cột Eo</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">399000</field>
+            <field name="compare_list_price">599000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_dresses')])]"/>
+            <field name="website_sequence">10010</field>
+        </record>
+
+        <record id="product_ao_kieu_tay_loe" model="product.template">
+            <field name="name">Áo Kiểu Tay Loe Thêu Hoa</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">289000</field>
+            <field name="compare_list_price">420000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_tops')])]"/>
+            <field name="website_sequence">10020</field>
+        </record>
+
+        <record id="product_tui_crossbody_da" model="product.template">
+            <field name="name">Túi Crossbody Da Bò Cao Cấp</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">459000</field>
+            <field name="compare_list_price">650000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_bags')])]"/>
+            <field name="website_sequence">10030</field>
+        </record>
+
+        <record id="product_non_baset" model="product.template">
+            <field name="name">Nón Baseline Trơn basic</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">129000</field>
+            <field name="compare_list_price">189000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_hats')])]"/>
+            <field name="website_sequence">10040</field>
+        </record>
+
+        <!-- Fashion Products -->
+        <record id="product_dam_a_tay_ngan" model="product.template">
+            <field name="name">Đầm A Tay Ngắn Cột Eo</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">459000</field>
+            <field name="compare_list_price">680000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_dresses')])]"/>
+            <field name="website_sequence">10050</field>
+        </record>
+
+        <record id="product_ao_so_mi_ruffle" model="product.template">
+            <field name="name">Áo Sơ Mi Ruffle Trắng Nữ</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">329000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_tops')])]"/>
+            <field name="website_sequence">10060</field>
+        </record>
+
+        <record id="product_khan_co_tay_thun" model="product.template">
+            <field name="name">Khăn Cổ Tay Thun Cao Cấp</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">89000</field>
+            <field name="compare_list_price">150000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_scarves')])]"/>
+            <field name="website_sequence">10070</field>
+        </record>
+
+        <record id="product_gang_tay_da" model="product.template">
+            <field name="name">Găng Tay Da Lót Lông Mùa Đông</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">199000</field>
+            <field name="compare_list_price">299000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_gloves')])]"/>
+            <field name="website_sequence">10080</field>
+        </record>
+
+        <!-- Accessories Products -->
+        <record id="product_len_nu_acrylic" model="product.template">
+            <field name="name">Len Nữ Acrylic Cao Cấp</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">249000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_knits')])]"/>
+            <field name="website_sequence">10090</field>
+        </record>
+
+        <record id="product_tui_xach_tay_da" model="product.template">
+            <field name="name">Túi Xách Tay Da PU Cao Cấp</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">559000</field>
+            <field name="compare_list_price">799000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_bags')])]"/>
+            <field name="website_sequence">10100</field>
+        </record>
+
+        <record id="product_giay_cao_got" model="product.template">
+            <field name="name">Giày Cao Gót Đơn Giản</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">399000</field>
+            <field name="compare_list_price">550000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_shoes')])]"/>
+            <field name="website_sequence">10110</field>
+        </record>
+
+        <record id="product_dam_xoe_bot" model="product.template">
+            <field name="name">Đầm Xòe Bổ Calf Fashion</field>
+            <field name="type">consu</field>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="True"/>
+            <field name="list_price">499000</field>
+            <field name="compare_list_price">720000</field>
+            <field name="is_published" eval="True"/>
+            <field name="public_categ_ids" eval="[(6, 0, [ref('category_dresses')])]"/>
+            <field name="website_sequence">10120</field>
+        </record>
+    </data>
+
+    <!-- Blog Demo Data -->
+    <data noupdate="1">
+        <record id="blog_fashion" model="blog.blog">
+            <field name="name">Tin Thời Trang</field>
+        </record>
+
+        <record id="blog_post_1" model="blog.post">
+            <field name="name">Xu Hướng Thời Trang Mùa Hè 2025</field>
+            <field name="blog_id" ref="blog_fashion"/>
+            <field name="subtitle">Những item không thể thiếu trong tủ đồ mùa hè năm nay</field>
+            <field name="website_published" eval="True"/>
+            <field name="is_published" eval="True"/>
+        </record>
+
+        <record id="blog_post_2" model="blog.post">
+            <field name="name">Cách Phối Đồ Công Sở Thanh Lịch</field>
+            <field name="blog_id" ref="blog_fashion"/>
+            <field name="subtitle">Gợi ý mix &amp; match cho dân công sở hiện đại</field>
+            <field name="website_published" eval="True"/>
+            <field name="is_published" eval="True"/>
+        </record>
+
+        <record id="blog_post_3" model="blog.post">
+            <field name="name">Top Phụ Kiện Hot Nhất Mùa Này</field>
+            <field name="blog_id" ref="blog_fashion"/>
+            <field name="subtitle">Túi xách, nón, khăn và phụ kiện được yêu thích nhất</field>
+            <field name="website_published" eval="True"/>
+            <field name="is_published" eval="True"/>
+        </record>
+
+        <record id="blog_post_4" model="blog.post">
+            <field name="name">Len Nữ - Xu Hướng Mùa Đông</field>
+            <field name="blog_id" ref="blog_fashion"/>
+            <field name="subtitle">Những mẫu len nữ thời trang cho mùa đông ấm áp</field>
+            <field name="website_published" eval="True"/>
+            <field name="is_published" eval="True"/>
+        </record>
+    </data>
+</odoo>

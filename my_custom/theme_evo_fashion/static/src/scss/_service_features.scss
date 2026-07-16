@@ -1,0 +1,102 @@
+// ============================================
+// Trevi Style - Service Features
+// ============================================
+
+.s_service_features {
+    padding: 30px 0;
+    background: $white;
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
+
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+
+        @media (max-width: $breakpoint-lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .service-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 20px 15px;
+        border-right: 1px solid $gray-200;
+        transition: all $transition;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        @media (max-width: $breakpoint-lg) {
+            border-bottom: 1px solid $gray-200;
+            padding: 18px 15px;
+
+            &:nth-child(2) {
+                border-right: none;
+            }
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                border-bottom: none;
+            }
+
+            &:nth-child(3) {
+                border-right: 1px solid $gray-200;
+            }
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            border-right: none !important;
+            border-bottom: 1px solid $gray-200;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        &:hover {
+            background: $gray-50;
+        }
+
+        .service-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: $border-radius-circle;
+            background: rgba($primary-color, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+
+            i {
+                font-size: 18px;
+                color: $primary-color;
+            }
+        }
+
+        .service-info {
+            .service-title {
+                font-size: $font-size-sm;
+                font-weight: $font-weight-semibold;
+                color: $dark-color;
+                margin-bottom: 2px;
+                white-space: nowrap;
+            }
+
+            .service-desc {
+                font-size: $font-size-xs;
+                color: $gray-500;
+                margin: 0;
+                white-space: nowrap;
+            }
+        }
+    }
+}

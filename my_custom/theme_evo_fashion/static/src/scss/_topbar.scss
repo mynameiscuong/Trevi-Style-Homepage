@@ -1,0 +1,45 @@
+// ============================================
+// Trevi Style - Topbar / Announcement Bar
+// ============================================
+
+.trevi-topbar {
+    background: $topbar-bg;
+    color: $white;
+    text-align: center;
+    font-weight: $font-weight-medium;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: $z-sticky;
+
+    @media (max-width: $breakpoint-md) {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .topbar-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        font-size: $font-size-sm;
+
+        a {
+            color: $white;
+            transition: opacity $transition;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .topbar-separator {
+            width: 4px;
+            height: 4px;
+            border-radius: $border-radius-circle;
+            background: rgba($white, 0.5);
+        }
+    }
+}

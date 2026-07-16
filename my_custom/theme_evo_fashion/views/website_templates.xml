@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Homepage Template -->
+    <template id="homepage" name="Trevi Style Homepage">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <!-- Section 1: Hero Slider -->
+                <t t-snippet-call="theme_evo_fashion.s_hero_slider"/>
+
+                <!-- Section 2: Category Section -->
+                <t t-snippet-call="theme_evo_fashion.s_category_section"/>
+
+                <!-- Section 3: Flash Sale -->
+                <t t-snippet-call="theme_evo_fashion.s_flash_sale"/>
+
+                <!-- Section 4: Coupon Section -->
+                <t t-snippet-call="theme_evo_fashion.s_coupon_section"/>
+
+                <!-- Section 5: Banner Grid -->
+                <t t-snippet-call="theme_evo_fashion.s_fashion_banners"/>
+
+                <!-- Section 6: Promo Banner -->
+                <t t-snippet-call="theme_evo_fashion.s_promo_banner"/>
+
+                <!-- Section 7: Product Tabs -->
+                <t t-snippet-call="theme_evo_fashion.s_product_tabs"/>
+
+                <!-- Section 8: Bottom Banner -->
+                <t t-snippet-call="theme_evo_fashion.s_bottom_banner"/>
+
+                <!-- Section 9: Collection -->
+                <t t-snippet-call="theme_evo_fashion.s_handmade_collection"/>
+
+                <t t-snippet-call="theme_evo_fashion.s_collection"/>
+
+                <!-- Section 10: Blog Grid -->
+                <t t-snippet-call="theme_evo_fashion.s_blog_grid"/>
+
+                <!-- Section 11: Instagram Feed -->
+                <t t-snippet-call="theme_evo_fashion.s_instagram"/>
+
+                <!-- Section 12: Customer Feedback -->
+                <t t-snippet-call="theme_evo_fashion.s_feedback"/>
+
+                <!-- Section 13: Brand Intro -->
+                <t t-snippet-call="theme_evo_fashion.s_intro"/>
+
+                <!-- Section 14: Policy -->
+                <t t-snippet-call="theme_evo_fashion.s_policy"/>
+
+                <!-- Section 15: Service Features -->
+                <t t-snippet-call="theme_evo_fashion.s_service_features"/>
+            </div>
+
+            <!-- Back to Top Button -->
+            <t t-snippet-call="theme_evo_fashion.s_back_to_top"/>
+
+            <!-- Sidebar Cart -->
+            <t t-snippet-call="theme_evo_fashion.s_sidebar_cart"/>
+        </t>
+    </template>
+
+    <!-- About Us Page -->
+    <template id="view_about_page" name="About Us">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="s_cover parallax s_parallax_is_fixed pt232 pb232"
+                         data-scroll-background-ratio="1">
+                    <span class="s_parallax_bg oe_img_bg"
+                          style="background: linear-gradient(135deg, #252a2b 0%, #8e8270 100%);
+                                 background-position: 50% 75%;"/>
+                    <div class="o_we_bg_filter bg-black-50"/>
+                    <div class="container s_allow_columns">
+                        <h1 class="display-3" style="text-align: center; color: white;">Về Trevi Style</h1>
+                        <p class="lead" style="text-align: center; color: rgba(255,255,255,0.9);">Thời trang nữ cao cấp - Phong cách &amp; Đẳng cấp</p>
+                    </div>
+                </section>
+
+                <section class="s_text_block pt80 pb80">
+                    <div class="container s_allow_columns">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Chào mừng đến với Trevi Style</h2>
+                                <p class="lead">Trevi Style là thương hiệu thời trang nữ hàng đầu Việt Nam, mang đến cho bạn những sản phẩm chất lượng cao với thiết kế độc đáo và thanh lịch.</p>
+                                <p>Với hơn 10 showroom trên toàn hệ thống, chúng tôi cam kết mang đến trải nghiệm mua sắm tốt nhất cho khách hàng.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="o_grid_mode" data-row-count="2">
+                                    <div class="o_grid_item g-col-lg-1 g-height-1 col-lg-1 text-center">
+                                        <h3 class="counter-value" data-counter-value="10">0</h3>
+                                        <p>Showroom</p>
+                                    </div>
+                                    <div class="o_grid_item g-col-lg-1 g-height-1 col-lg-1 text-center">
+                                        <h3 class="counter-value" data-counter-value="500">0</h3>
+                                        <p>Sản phẩm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- Static Announcement Bar -->
+    <template id="header_announcement" name="Static Announcement Bar" inherit_id="website.layout" priority="99">
+        <xpath expr="//header" position="before">
+            <div class="trevi-announcement-bar">
+                <div class="announcement-content">
+                    <span class="announcement-item">với đơn hàng trên 500k</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">Khuyến mãi khủng giảm tới 35% tất cả sản phẩm</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">SALE hot chào lương về - Freeship đơn 0đ</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">Giảm ngay đến 30% toàn bộ sản phẩm len nữ</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">Ưu đãi đặc biệt cho set khăn, mũ, găng tay</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">với đơn hàng trên 500k</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">Khuyến mãi khủng giảm tới 35% tất cả sản phẩm</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">SALE hot chào lương về - Freeship đơn 0đ</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">Giảm ngay đến 30% toàn bộ sản phẩm len nữ</span>
+                    <span class="announcement-separator">•</span>
+                    <span class="announcement-item">Ưu đãi đặc biệt cho set khăn, mũ, găng tay</span>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- About Us Page Record -->
+    <record id="page_about" model="website.page">
+        <field name="is_published">True</field>
+        <field name="url">/about-us</field>
+        <field name="view_id" ref="view_about_page"/>
+        <field name="website_meta_title">Giới thiệu - Trevi Style</field>
+        <field name="website_meta_description">Trevi Style - Thời trang nữ cao cấp</field>
+    </record>
+</odoo>

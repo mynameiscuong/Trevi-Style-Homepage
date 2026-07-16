@@ -1,0 +1,115 @@
+// ============================================
+// Trevi Style - Theme Variables
+// Color Palette: Haravan Trevi Style
+// ============================================
+
+// Bootstrap variable overrides
+$primary: #8e8270;
+$secondary: #252a2b;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #ff0000;
+$light: #f5f5f5;
+$dark: #252a2b;
+
+// Custom palette
+$primary-color: #8e8270;
+$secondary-color: #252a2b;
+$accent-color: #ff0000;
+$topbar-bg: #193d87;
+$dark-color: #252a2b;
+$light-color: #f5f5f5;
+$white: #ffffff;
+$black: #000000;
+$gray-50: #fafafa;
+$gray-100: #f5f5f5;
+$gray-200: #eeeeee;
+$gray-300: #e0e0e0;
+$gray-400: #bdbdbd;
+$gray-500: #9e9e9e;
+$gray-600: #757575;
+$gray-700: #616161;
+$gray-800: #424242;
+$gray-900: #212121;
+
+// Typography - Be Vietnam Pro
+$font-family-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-size-base: 14px;
+$font-size-xs: 11px;
+$font-size-sm: 12px;
+$font-size-base: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+$font-size-2xl: 22px;
+$font-size-3xl: 28px;
+$font-size-4xl: 40px;
+$font-size-5xl: 56px;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Spacing
+$spacer: 1rem;
+$spacer-sm: 0.5rem;
+$spacer-lg: 1.5rem;
+$spacer-xl: 2rem;
+$spacer-2xl: 3rem;
+$spacer-3xl: 4rem;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-pill: 50px;
+$border-radius-circle: 50%;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+$shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.12);
+$shadow-xl: 0 8px 40px rgba(0, 0, 0, 0.16);
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Z-index
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-fixed: 300;
+$z-modal: 400;
+$z-tooltip: 500;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Container
+$container-max-width: 1200px;
+$container-padding: 15px;
+
+// Header
+$header-height: 80px;
+$header-sticky-height: 60px;
+
+// Hero slider
+$hero-height: 550px;
+$hero-height-sm: 350px;
+
+// Product card
+$product-card-radius: $border-radius;
+$product-card-shadow: $shadow-sm;
+$product-card-hover-shadow: $shadow-lg;
+
+// Button
+$btn-border-radius: $border-radius-sm;
+$btn-padding-x: 20px;
+$btn-padding-y: 10px;

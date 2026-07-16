@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Hero Slider                         -->
+    <!-- ============================================ -->
+    <template id="s_hero_slider" name="Hero Slider">
+        <section class="s_hero_slider" data-name="Hero Slider">
+            <div class="hero-slider-container">
+                <div class="hero-slides">
+                    <div class="hero-slide active">
+                        <div class="hero-slide-bg" style="background-image: url('//cdn.hstatic.net/themes/200001113693/1001436626/14/slide_1_img.jpg?v=1370'); background-size: cover; background-position: center;"/>
+                        <div class="hero-slide-overlay"/>
+                        <div class="container h-100 d-flex align-items-center">
+                            <div class="hero-content">
+                                <span class="hero-tag">New Arrivals</span>
+                                <h1 class="hero-title">NEW COLLECTION</h1>
+                                <p class="hero-subtitle">Bộ sưu tập mới - Phong cách thời trang nữ hiện đại và thanh lịch</p>
+                                <div class="hero-buttons">
+                                    <a href="/shop" class="btn btn-hero-primary">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide">
+                        <div class="hero-slide-bg" style="background-image: url('//cdn.hstatic.net/themes/200001113693/1001436626/14/slide_2_img.jpg?v=1370'); background-size: cover; background-position: center;"/>
+                        <div class="hero-slide-overlay"/>
+                        <div class="container h-100 d-flex align-items-center">
+                            <div class="hero-content">
+                                <span class="hero-tag">Trendy &amp; Minimal</span>
+                                <h1 class="hero-title">MODERN ESSENTIALS</h1>
+                                <p class="hero-subtitle">Phong cách tối giản, linh hoạt cho nhịp sống hiện đại</p>
+                                <div class="hero-buttons">
+                                    <a href="/shop" class="btn btn-hero-primary">Xem Sản Phẩm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slider-dots">
+                    <span class="dot active" data-index="0"/>
+                    <span class="dot" data-index="1"/>
+                </div>
+                <button class="hero-slider-arrow hero-slider-prev" aria-label="Previous">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="hero-slider-arrow hero-slider-next" aria-label="Next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Category Section                    -->
+    <!-- ============================================ -->
+    <template id="s_category_section" name="Category Section">
+        <section class="s_category_section home-category" data-name="Category Section">
+            <div class="container container-pd">
+                <div class="sectionHeading">
+                    <h3>Danh Mục Nổi Bật</h3>
+                </div>
+                <div class="sectionContent">
+                    <div class="slider-category-wrapper">
+                        <button class="category-nav-btn prev" aria-label="Previous">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="slider-category">
+                        <div class="item-category">
+                            <div class="media-category effect-image">
+                                <a href="/shop?category=ao-len" title="Áo Len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_category_1.jpg?v=1370" alt="Áo Len"/>
+                                </a>
+                            </div>
+                            <div class="title-category">
+                                <h3 class="line-clamp-2-new"><a href="/shop?category=ao-len" title="Áo Len">Áo Len</a></h3>
+                                <div class="status">
+                                    <span class="total-product">5 sản phẩm</span>
+                                    <a href="/shop?category=ao-len" title="Xem chi tiết" class="view-more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-category">
+                            <div class="media-category effect-image">
+                                <a href="/shop?category=vay-len" title="Váy Len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_category_2.jpg?v=1370" alt="Váy Len"/>
+                                </a>
+                            </div>
+                            <div class="title-category">
+                                <h3 class="line-clamp-2-new"><a href="/shop?category=vay-len" title="Váy Len">Váy Len</a></h3>
+                                <div class="status">
+                                    <span class="total-product">7 sản phẩm</span>
+                                    <a href="/shop?category=vay-len" title="Xem chi tiết" class="view-more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-category">
+                            <div class="media-category effect-image">
+                                <a href="/shop?category=mu-len" title="Mũ Len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_category_3.jpg?v=1370" alt="Mũ Len"/>
+                                </a>
+                            </div>
+                            <div class="title-category">
+                                <h3 class="line-clamp-2-new"><a href="/shop?category=mu-len" title="Mũ Len">Mũ Len</a></h3>
+                                <div class="status">
+                                    <span class="total-product">7 sản phẩm</span>
+                                    <a href="/shop?category=mu-len" title="Xem chi tiết" class="view-more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-category">
+                            <div class="media-category effect-image">
+                                <a href="/shop?category=khan-len" title="Khăn Len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_category_4.jpg?v=1370" alt="Khăn Len"/>
+                                </a>
+                            </div>
+                            <div class="title-category">
+                                <h3 class="line-clamp-2-new"><a href="/shop?category=khan-len" title="Khăn Len">Khăn Len</a></h3>
+                                <div class="status">
+                                    <span class="total-product">6 sản phẩm</span>
+                                    <a href="/shop?category=khan-len" title="Xem chi tiết" class="view-more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-category">
+                            <div class="media-category effect-image">
+                                <a href="/shop?category=bao-tay" title="Bao Tay Len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_category_5.jpg?v=1370" alt="Bao Tay Len"/>
+                                </a>
+                            </div>
+                            <div class="title-category">
+                                <h3 class="line-clamp-2-new"><a href="/shop?category=bao-tay" title="Bao Tay Len">Bao Tay Len</a></h3>
+                                <div class="status">
+                                    <span class="total-product">4 sản phẩm</span>
+                                    <a href="/shop?category=bao-tay" title="Xem chi tiết" class="view-more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-category">
+                            <div class="media-category effect-image">
+                                <a href="/shop?category=tui-xach" title="Túi Xách Len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_category_6.jpg?v=1370" alt="Túi Xách Len"/>
+                                </a>
+                            </div>
+                            <div class="title-category">
+                                <h3 class="line-clamp-2-new"><a href="/shop?category=tui-xach" title="Túi Xách Len">Túi Xách Len</a></h3>
+                                <div class="status">
+                                    <span class="total-product">5 sản phẩm</span>
+                                    <a href="/shop?category=tui-xach" title="Xem chi tiết" class="view-more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-category">
+                            <div class="media-category effect-image">
+                                <a href="/shop?category=thu-bong" title="Thú Bông Len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_category_7.jpg?v=1370" alt="Thú Bông Len"/>
+                                </a>
+                            </div>
+                            <div class="title-category">
+                                <h3 class="line-clamp-2-new"><a href="/shop?category=thu-bong" title="Thú Bông Len">Thú Bông Len</a></h3>
+                                <div class="status">
+                                    <span class="total-product">3 sản phẩm</span>
+                                    <a href="/shop?category=thu-bong" title="Xem chi tiết" class="view-more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-category">
+                            <div class="media-category effect-image">
+                                <a href="/shop?category=moc-khoa" title="Móc Khóa Len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_category_8.jpg?v=1370" alt="Móc Khóa Len"/>
+                                </a>
+                            </div>
+                            <div class="title-category">
+                                <h3 class="line-clamp-2-new"><a href="/shop?category=moc-khoa" title="Móc Khóa Len">Móc Khóa Len</a></h3>
+                                <div class="status">
+                                    <span class="total-product">4 sản phẩm</span>
+                                    <a href="/shop?category=moc-khoa" title="Xem chi tiết" class="view-more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="category-nav-btn next" aria-label="Next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Flash Sale                          -->
+    <!-- ============================================ -->
+    <template id="s_flash_sale" name="Flash Sale">
+        <section class="s_flash_sale section-home-flase" data-name="Flash Sale">
+            <div class="container container-pd">
+                <div class="thumb-flasale">
+                    <div class="thumb-title-flash row no-margin">
+                        <h3 class="title-index col-xl-3 col-lg-3 no-padding">
+                            <a class="title-name" href="/shop">
+                                Flash Sale
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.6962 8.63839C19.1335 8.02409 18.2587 7.19494 17.8866 9.06712C17.76 9.70368 17.4644 10.1944 17.211 10.5895C16.9379 9.20718 16.1161 7.77645 15.3419 6.81178C15.0522 6.45086 14.0242 5.01612 13.8267 2.61586C13.7972 2.25764 13.3717 2.08941 13.1055 2.33104C10.5621 4.63996 9.16597 7.81552 9.11413 11.3905C9.11413 11.3905 8.05501 10.4978 7.47963 8.83699C7.3247 8.38975 6.7251 8.30442 6.46497 8.69988C6.41503 8.77582 6.36873 8.85186 6.32696 8.92569C4.36456 12.3956 3.42056 16.6093 4.29326 20.5296C5.75242 27.0949 15.4046 28.9304 20.5145 24.804C25.514 20.7668 23.9248 13.2528 19.6962 8.63839Z" fill="#ED694A"/>
+                                    <path d="M5.65143 20.9418C4.78886 16.9796 5.7019 12.7248 7.61821 9.20061C7.56975 9.0837 7.52313 8.96278 7.47958 8.83706C7.32464 8.38982 6.72505 8.30449 6.46491 8.69995C6.41497 8.77589 6.36873 8.85193 6.32696 8.92576C4.36456 12.3957 3.42056 16.6094 4.29326 20.5297C4.95882 23.5243 7.32912 25.5342 10.1953 26.4438C7.95935 25.3607 6.20836 23.504 5.65143 20.9418Z" fill="#D8553A"/>
+                                    <path d="M10.4792 11.3247C10.5851 8.08013 11.7587 5.17077 13.8591 2.93579C13.8446 2.8127 13.8339 2.70265 13.827 2.61912C13.7969 2.25783 13.387 2.07664 13.122 2.31616C10.6653 4.53722 9.16799 7.68067 9.11426 11.3904L9.57405 11.7475C9.80049 11.9234 10.1073 11.9157 10.3236 11.7546C10.4526 11.6452 10.4711 11.4802 10.4792 11.3247Z" fill="#D8553A"/>
+                                    <path d="M18.1536 13.4376C17.738 12.9839 17.0919 12.3714 16.817 13.7543C16.7236 14.2244 16.5051 14.5869 16.318 14.8787C16.1163 13.8578 15.5094 12.801 14.9375 12.0885C14.7235 11.8219 13.9642 10.7622 13.8183 8.98921C13.7966 8.72459 13.4823 8.6004 13.2857 8.77885C11.4071 10.4842 10.3758 12.8299 10.3376 15.4704C10.3376 15.4704 9.55528 14.811 9.13035 13.5843C9.01592 13.2539 8.573 13.1909 8.38089 13.483C8.34403 13.5391 8.3098 13.5953 8.27895 13.6498C6.82944 16.2128 6.13219 19.3251 6.77676 22.2207C7.85455 27.07 14.9838 28.4257 18.7581 25.3778C22.4508 22.396 21.277 16.8459 18.1536 13.4376Z" fill="#F4A32C"/>
+                                    <path d="M8.12102 22.6012C7.55032 19.7706 8.14142 16.7334 9.39466 14.2042C9.29915 14.0172 9.20866 13.8105 9.1303 13.5844C9.01586 13.254 8.57295 13.191 8.38084 13.4831C8.34398 13.5391 8.30975 13.5953 8.2789 13.6499C6.82945 16.2129 6.13224 19.3252 6.77671 22.2208C7.278 24.4761 9.08843 25.9753 11.2613 26.6276C9.7175 25.8534 8.50197 24.4932 8.12102 22.6012Z" fill="#E89528"/>
+                                    <path d="M16.7451 17.8191C16.4638 17.512 16.0263 17.0973 15.8403 18.0335C15.777 18.3518 15.6291 18.5971 15.5024 18.7946C15.3659 18.1035 14.9551 17.3881 14.5679 16.9058C14.4231 16.7253 13.9091 16.008 13.8102 14.8078C13.7955 14.6287 13.5828 14.5446 13.4497 14.6654C12.178 15.8199 11.4799 17.4077 11.454 19.1952C11.454 19.1952 10.9244 18.7488 10.6368 17.9184C10.5593 17.6948 10.2595 17.6522 10.1295 17.8499C10.1045 17.8878 10.0814 17.9258 10.0605 17.9628C9.07928 19.6977 8.60726 21.8046 9.04358 23.7647C9.77316 27.0474 14.5993 27.9651 17.1542 25.9019C18.0291 25.1954 18.5716 24.1998 18.6816 23.0986C18.8476 21.4306 18.2057 19.413 16.7451 17.8191Z" fill="#F4D44E"/>
+                                    <path d="M15.4377 21.8851C15.281 21.714 15.0373 21.483 14.9336 22.0045C14.8984 22.1819 14.816 22.3186 14.7454 22.4286C14.6693 22.0436 14.4405 21.645 14.2248 21.3763C14.1441 21.2757 13.8577 20.8761 13.8026 20.2074C13.7944 20.1076 13.6759 20.0608 13.6018 20.1281C12.8933 20.7713 12.5043 21.6559 12.4899 22.6517C12.4899 22.6517 12.1949 22.403 12.0346 21.9404C11.9914 21.8158 11.8244 21.792 11.752 21.9022C11.7381 21.9234 11.7252 21.9446 11.7136 21.9651C11.167 22.9318 10.904 24.1055 11.1471 25.1976C11.7007 27.6883 16.2384 27.6128 16.5167 24.8264C16.6091 23.8972 16.2515 22.7731 15.4377 21.8851Z" fill="#EAE9E8"/>
+                                    <path d="M12.2007 25.6918C11.9576 24.7149 12.2206 23.6649 12.7672 22.8003C12.7788 22.7819 12.7917 22.763 12.8056 22.744C12.878 22.6455 13.0451 22.6667 13.0882 22.7781C13.2485 23.192 13.5435 23.4145 13.5435 23.4145C13.5554 22.6825 13.8205 22.0181 14.3075 21.4851C14.1986 21.3343 13.8654 20.9707 13.8026 20.2074C13.7944 20.1076 13.6759 20.0608 13.6018 20.1281C12.8933 20.7713 12.5043 21.6559 12.4899 22.6517C12.4899 22.6517 12.1949 22.403 12.0346 21.9405C11.9915 21.8158 11.8244 21.7921 11.752 21.9023C11.7381 21.9234 11.7252 21.9446 11.7136 21.9652C11.167 22.9318 10.904 24.1056 11.1471 25.1976C11.3721 26.2099 12.2963 26.8182 13.3181 26.965C12.7669 26.6944 12.3433 26.2657 12.2007 25.6918Z" fill="#F7E7A1"/>
+                                    <path d="M9.73473 3.58831C10.8751 2.66077 10.8726 0.925435 9.73473 0C8.59435 0.927492 8.59683 2.66287 9.73473 3.58831Z" fill="#D8553A"/>
+                                    <path d="M23.4031 11.0328C24.5435 10.1052 24.5409 8.36989 23.4031 7.44446C22.8819 7.86834 22.2652 10.1073 23.4031 11.0328Z" fill="#D8553A"/>
+                                    <path d="M3.20562 11.739C4.02748 11.0705 4.02569 9.81987 3.20562 9.15283C2.82999 9.45832 2.38555 11.072 3.20562 11.739Z" fill="#D8553A"/>
+                                    <path d="M17.4399 6.1744C18.2618 5.50589 18.26 4.25529 17.4399 3.58826C16.6181 4.25672 16.6199 5.50742 17.4399 6.1744Z" fill="#D8553A"/>
+                                    <path d="M11.386 15.0464C11.5748 12.8183 12.4256 10.8371 13.8543 9.32673C13.8399 9.21725 13.8277 9.10488 13.8182 8.98933C13.7964 8.72471 13.4822 8.60052 13.2856 8.77898C11.7969 10.1303 10.8414 11.8841 10.4895 13.8677L10.489 13.8675C10.4629 14.0147 10.4305 14.229 10.41 14.3973C10.4101 14.3975 10.4101 14.3976 10.4102 14.3978C10.3675 14.7492 10.3427 15.1069 10.3374 15.4705C10.3772 15.4783 11.2772 15.9409 11.386 15.0464Z" fill="#E89528"/>
+                                    <path d="M10.3587 24.2304C9.97086 22.3992 10.3012 20.4465 11.0686 18.7545C10.9199 18.546 10.7572 18.266 10.6368 17.9184C10.5593 17.6948 10.2596 17.6521 10.1295 17.8498C10.1045 17.8877 10.0813 17.9258 10.0605 17.9627C9.07928 19.6977 8.60726 21.8045 9.04358 23.7647C9.3853 25.302 10.6255 26.3207 12.11 26.7574C11.2459 26.1837 10.5922 25.3346 10.3587 24.2304Z" fill="#E8C842"/>
+                                    <path d="M12.854 18.395C12.9826 17.4761 13.3584 16.4636 13.9501 15.6172C13.8856 15.3782 13.835 15.1081 13.8102 14.8078C13.7955 14.6287 13.5827 14.5446 13.4497 14.6654C12.6573 15.3848 12.0885 16.2727 11.7654 17.272L11.7646 17.2718C11.7138 17.4288 11.6419 17.6889 11.5983 17.8941C11.5987 17.894 11.5991 17.894 11.5994 17.8939C11.5102 18.3128 11.4606 18.7476 11.4541 19.1951C12.1656 19.2839 12.7542 19.1077 12.854 18.395Z" fill="#E8C842"/>
+                                </svg>
+                            </a>
+                        </h3>
+                        <div class="flash-text col-xl-6 col-lg-5 no-padding">
+                            <div class="text-flashsale owl-carousel">
+                                <div class="item-flashsale">Tặng kèm dịch vụ bảo trì miễn phí 1 lần/năm cho khách mua bộ combo nồi thất</div>
+                                <div class="item-flashsale">Nhận voucher 500.000₫ khi đặt mua đơn hàng từ 5 triệu trở lên</div>
+                                <div class="item-flashsale">Giảm đến 15% cho toàn bộ sản phẩm nồi thất trong tháng này</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 no-padding">
+                            <div class="count-down">
+                                <div class="timer-view" data-countdown="countdown" data-date="2026-12-20-00-00-00">
+                                    <div class="block-timer"><p><b>157</b> Ngày</p></div>
+                                    <span>:</span>
+                                    <div class="block-timer"><p><b>03</b> Giờ</p></div>
+                                    <span class="mobile">:</span>
+                                    <div class="block-timer"><p><b>26</b> Phút</p></div>
+                                    <span>:</span>
+                                    <div class="block-timer"><p><b>05</b> Giây</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flash-sale-products-wrapper">
+                    <div class="flash-sale-products">
+                        <t t-foreach="env['product.template'].sudo().search([('is_published', '=', True)], limit=8, order='website_sequence')" t-as="product">
+                            <div class="flash-sale-item">
+                                <div class="product-loop">
+                                    <div class="product-inner">
+                                        <div class="proloop-image">
+                                            <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                <div class="pro-sale"><span>-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span></div>
+                                            </t>
+                                            <div class="product--image">
+                                                <a t-att-href="'/shop/%s' % product.id" class="d-block">
+                                                    <img src="/my_custom/theme_evo_fashion/static/src/img/shopping.webp" alt="Product" style="width: 100%; height: 100%; object-fit: contain;"/>
+                                                </a>
+                                            </div>
+                                            <div class="quickview-product">
+                                                <a href="javascript:void(0)" class="icon-quickview" t-att-data-product-id="product.id" title="Xem nhanh" name="icon quickview">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                        <circle cx="12" cy="12" r="3"/>
+                                                    </svg>
+                                                </a>
+                                                <a href="javascript:void(0)" class="setWishlist btn-views btn-circle" title="Thêm vào yêu thích">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06 1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="proloop-detail">
+                                            <div class="proloop--variant variantColor">
+                                                <ul class="nav list-color flex-nowrap">
+                                                    <li class="vrt-color not-hover">
+                                                        <span class="do"></span>
+                                                    </li>
+                                                    <li class="vrt-color not-hover">
+                                                        <span class="be"></span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="nav list-option">
+                                                    <li class="vrt-option"><span>+3 Kích thước</span></li>
+                                                </ul>
+                                            </div>
+                                            <p class="proloop--vendor"><a title="Show vendor" href="#">Trevi Lens</a></p>
+                                            <h3><a t-att-href="'/shop/%s' % product.id" t-esc="product.name"/></h3>
+                                            <div class="productcount">
+                                                <div class="countitem visible">
+                                                    <span class="a-center">Đã bán 246 sp</span>
+                                                    <div class="countdown" style="width:71%"><span></span></div>
+                                                </div>
+                                                <div class="sale-bar"></div>
+                                            </div>
+                                            <div class="wrapper-action-loop">
+                                                <p class="proloop--price">
+                                                    <span class="price" t-esc="'%s₫' % product.list_price"/>
+                                                    <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                        <span class="price-del" t-esc="'%s₫' % product.compare_list_price"/>
+                                                        <span class="pro-percent">-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span>
+                                                    </t>
+                                                </p>
+                                                <div class="proloop-actions">
+                                                    <div class="proloop-actions__inner">
+                                                        <div class="actions-primary">
+                                                            <button type="button" class="btn-proloop-cart add-to-cart" title="Thêm vào giỏ">
+                                                                <span class="btnadd">Thêm vào giỏ</span>
+                                                                <span class="btnico" title="Thêm vào giỏ">
+                                                            <svg width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 512) scale(.1 -.1)"><path d="m2371 5100c-150-40-306-141-387-248l-35-48-492-58c-271-32-501-63-512-69-31-16-44-39-45-75 0-32 54-516 64-573 5-25 3-27-44-31-27-3-56-11-65-18s-78-117-155-245l-139-232-86-1660c-47-913-85-1692-85-1730 0-60 3-73 23-91l23-22h2125 2126l21 23c18 19 22 35 22 92 0 37-38 815-85 1728l-86 1660-139 232c-77 128-147 238-156 246-11 9-49 15-106 18-86 3-90 4-84 25 3 11 18 74 33 138 29 128 26 152-19 182-13 8-190 54-393 101-204 47-380 90-391 94-14 6-24 22-28 45-11 60-92 208-153 281-76 91-209 181-324 220-73 25-102 29-219 32-111 2-148-1-209-17zm318-176c139-34 279-140 353-265 21-34 36-64 34-66s-51 8-110 22c-113 28-152 27-180-4-8-9-34-96-56-192-23-95-43-182-46-191-4-14-72-44-80-35-1 1-19 139-39 306-19 167-40 311-44 320-21 39-55 45-163 33-56-7-103-10-106-7-8 8 127 68 183 81 72 18 178 17 254-2zm-329-258c0-2 14-117 30-256 17-139 27-256 23-260s-190-51-413-104c-308-74-410-102-427-118-31-29-30-70 7-220 17-67 30-128 30-135 0-10-45-13-203-13h-203l-56 478c-31 262-56 478-55 478 1 1 283 36 627 77s628 75 633 76c4 0 7-1 7-3zm1105-357c242-56 444-105 449-110 6-5-20-134-64-324l-74-315h-246-246l-82 343c-72 301-85 345-107 365-31 26-65 28-147 6-33-8-61-14-63-12-1 2 7 42 18 89l20 86 51-13c28-7 249-58 491-115zm-495-226c0-5 27-120 60-257 33-136 60-252 60-257s-276-9-643-9h-642l-28 117c-15 64-26 117-24 119 2 1 1194 291 1210 293 4 0 7-2 7-6zm-1980-282c0-9 14-119 25-203l5-38h-100c-55 0-100 3-100 6 0 18 145 244 156 244 8 0 14-4 14-9zm3239-110c39-66 71-122 71-125s-74-6-165-6-165 3-165 8c0 4 12 60 27 125l27 117h67 66l72-119zm155-373c3-35 40-733 81-1553s76-1511 78-1537l4-48h-1987-1987l4 48c2 26 37 717 78 1537s78 1518 81 1553l6 62h1818 1818l6-62z"/><path d="m1850 3209c-168-32-260-248-169-395 24-39 82-92 114-104 23-9 23-10 27-242 4-223 5-236 32-313 85-248 285-432 534-492 88-21 256-21 344 0 249 60 449 244 534 492 27 77 28 90 32 312l4 233 34 16c42 20 101 85 121 133 24 55 21 159-6 214-26 53-87 112-140 134-46 20-156 20-202 0-199-83-215-381-26-479l39-19-4-207c-5-237-17-291-88-400-225-349-715-349-940 0-71 109-83 164-88 400l-4 207 39 19c85 44 132 127 133 232 0 175-145 292-320 259z"/></g></svg>
+                                                        </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="actions-boxqty d-flex">
+                                                            <div class="actions-wrapqty d-flex">
+                                                                <button class="qty-btn proloop-minus">
+                                                                    <svg width="18" height="18" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect height="1" width="18" y="9" x="1"></rect></svg>
+                                                                </button>
+                                                                <input class="proloop-value" type="text" readonly="readonly" name="proloop-quantity" value="1"/>
+                                                                <button class="qty-btn proloop-plus">
+                                                                    <svg width="18" height="18" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="1" width="1" height="17"></rect><rect x="1" y="9" width="17" height="1"></rect></svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="actions-icon">
+                                                                <button class="btnico" title="Thêm vào giỏ">
+                                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                        <circle cx="9" cy="21" r="1"></circle>
+                                                                        <circle cx="20" cy="21" r="1"></circle>
+                                                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                    <button class="flash-sale-nav flash-prev" aria-label="Previous">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 12L6 8L10 4" stroke="#2B6377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="flash-sale-nav flash-next" aria-label="Next">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="#2B6377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- Quick View Modal                             -->
+    <!-- ============================================ -->
+    <template id="quickview_modal" name="Quick View Modal">
+        <div class="quickview-modal" id="quickviewModal">
+            <div class="quickview-content">
+                <button class="quickview-close" id="quickviewClose">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+                <div class="quickview-body" id="quickviewBody">
+                    <!-- Product details will be loaded here dynamically -->
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Banner Grid                        -->
+    <!-- ============================================ -->
+    <template id="s_fashion_banners" name="Fashion Banners">
+        <section class="s_fashion_banners" data-name="Fashion Banners">
+            <div class="container">
+                <div class="banner-grid">
+                    <div class="banner-item banner-large">
+                        <div class="banner-bg" style="background-image: url('//cdn.hstatic.net/themes/200001113693/1001436626/14/home_collection_1_img.jpg?v=1370'); background-size: cover; background-position: center;"/>
+                        <div class="banner-overlay"/>
+                        <div class="banner-content">
+                            <span class="banner-tag">Bộ Knit Mùa Đông</span>
+                            <h3 class="banner-title">CHỈ TỪ 2.490.000₫</h3>
+                            <p class="banner-desc">Bộ Knit mùa đông thanh lịch, ấm áp</p>
+                            <a href="/shop" class="btn btn-banner">Khám Phá BST</a>
+                        </div>
+                    </div>
+                    <div class="banner-item banner-small">
+                        <div class="banner-bg" style="background: linear-gradient(135deg, #252a2b 0%, #3d4445 100%);"/>
+                        <div class="banner-overlay"/>
+                        <div class="banner-content">
+                            <span class="banner-tag">Phụ Kiện Len</span>
+                            <h3 class="banner-title">KHĂN - MŨ - GĂNG TAY</h3>
+                            <a href="/shop" class="btn btn-banner">Xem Thêm</a>
+                        </div>
+                    </div>
+                    <div class="banner-item banner-small">
+                        <div class="banner-bg" style="background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);"/>
+                        <div class="banner-overlay"/>
+                        <div class="banner-content">
+                            <span class="banner-tag">SALE OFF 50%</span>
+                            <h3 class="banner-title">SALE SỐC</h3>
+                            <a href="/shop" class="btn btn-banner">Mua Ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Promo Banner                        -->
+    <!-- ============================================ -->
+    <template id="s_promo_banner" name="Promo Banner">
+        <section class="s_promo_banner" data-name="Promo Banner">
+            <div class="container">
+                <div class="promo-banner">
+                    <div class="promo-content">
+                        <div class="promo-discount">GIẢM<br/>50%</div>
+                        <div class="promo-text">
+                            <h2 class="promo-title">ƯU ĐÃI ĐẶC BIỆT</h2>
+                            <p class="promo-desc">Nhập mã <strong>TREVI50</strong> khi thanh toán</p>
+                            <p class="promo-note">Áp dụng cho đơn hàng từ 500.000₫</p>
+                            <a href="/shop" class="btn btn-promo">Mua Sắm Ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Product Tabs                        -->
+    <!-- ============================================ -->
+    <template id="s_product_tabs" name="Product Tabs">
+        <section class="s_product_tabs section-home-product-tab" data-name="Product Tabs">
+            <div class="container container-pd">
+                <div class="section-title-tab">
+                    <div class="sectionHeading">
+                        <h3>
+                            <a href="/shop" title="Sản Phẩm Nổi Bật">
+                                Sản Phẩm Nổi Bật
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="tab_big">
+                        <div class="tab_ul">
+                            <ul class="tabs tabs-title tab-pc tabtitle1 ajax clearfix">
+                                <li class="tab-link tab_cate has-content current" data-tab="tab-new">
+                                    <span>Hàng Mới Về</span>
+                                </li>
+                                <li class="tab-link tab_cate" data-tab="tab-bestseller">
+                                    <span>Bán Chạy</span>
+                                </li>
+                                <li class="tab-link tab_cate" data-tab="tab-sale">
+                                    <span>Khuyến Mãi</span>
+                                </li>
+                            </ul>
+                            <div class="grad-left">
+                                <a href="javascript:void(0)" class="prev" title="Previous">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 12L6 8L10 4" stroke="#2B6377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grad-right">
+                                <a href="javascript:void(0)" class="next" title="Next">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 12L10 8L6 4" stroke="#2B6377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-products">
+                    <div class="tab-content current" id="tab-new">
+                        <div class="product-grid">
+                            <t t-foreach="env['product.template'].sudo().search([('is_published', '=', True)], limit=8, order='website_sequence desc')" t-as="product">
+                                <div class="product-grid-item">
+                                    <div class="product-loop">
+                                        <div class="product-inner">
+                                            <div class="proloop-image">
+                                                <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                    <div class="pro-sale"><span>-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span></div>
+                                                </t>
+                                                <div class="product--image">
+                                                    <a t-att-href="'/shop/%s' % product.id" class="d-block">
+                                                        <img src="/my_custom/theme_evo_fashion/static/src/img/shopping.webp" alt="Product" style="width: 100%; height: 100%; object-fit: contain;"/>
+                                                    </a>
+                                                </div>
+                                                <div class="quickview-product">
+                                                    <a class="icon-quickview" t-att-href="'/shop/%s' % product.id" title="Xem nhanh" name="icon quickview">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                            <circle cx="12" cy="12" r="3"/>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="setWishlist btn-views btn-circle" title="Thêm vào yêu thích">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="proloop-detail">
+                                                <h3><a t-att-href="'/shop/%s' % product.id" t-esc="product.name"/></h3>
+                                                <div class="wrapper-action-loop">
+                                                    <p class="proloop--price">
+                                                        <span class="price" t-esc="'%s₫' % product.list_price"/>
+                                                        <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                            <span class="price-del" t-esc="'%s₫' % product.compare_list_price"/>
+                                                            <span class="pro-percent">-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span>
+                                                        </t>
+                                                    </p>
+                                                    <div class="proloop-actions">
+                                                        <button type="button" class="btn-proloop-cart add-to-cart" title="Thêm vào giỏ">
+                                                            <span class="btnadd">Thêm vào giỏ</span>
+                                                            <span class="btnico" title="Thêm vào giỏ">
+                                                                <svg width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 512) scale(.1 -.1)"><path d="m2371 5100c-150-40-306-141-387-248l-35-48-492-58c-271-32-501-63-512-69-31-16-44-39-45-75 0-32 54-516 64-573 5-25 3-27-44-31-27-3-56-11-65-18s-78-117-155-245l-139-232-86-1660c-47-913-85-1692-85-1730 0-60 3-73 23-91l23-22h2125 2126l21 23c18 19 22 35 22 92 0 37-38 815-85 1728l-86 1660-139 232c-77 128-147 238-156 246-11 9-49 15-106 18-86 3-90 4-84 25 3 11 18 74 33 138 29 128 26 152-19 182-13 8-190 54-393 101-204 47-380 90-391 94-14 6-24 22-28 45-11 60-92 208-153 281-76 91-209 181-324 220-73 25-102 29-219 32-111 2-148-1-209-17zm318-176c139-34 279-140 353-265 21-34 36-64 34-66s-51 8-110 22c-113 28-152 27-180-4-8-9-34-96-56-192-23-95-43-182-46-191-4-14-72-44-80-35-1 1-19 139-39 306-19 167-40 311-44 320-21 39-55 45-163 33-56-7-103-10-106-7-8 8 127 68 183 81 72 18 178 17 254-2zm-329-258c0-2 14-117 30-256 17-139 27-256 23-260s-190-51-413-104c-308-74-410-102-427-118-31-29-30-70 7-220 17-67 30-128 30-135 0-10-45-13-203-13h-203l-56 478c-31 262-56 478-55 478 1 1 283 36 627 77s628 75 633 76c4 0 7-1 7-3zm1105-357c242-56 444-105 449-110 6-5-20-134-64-324l-74-315h-246-246l-82 343c-72 301-85 345-107 365-31 26-65 28-147 6-33-8-61-14-63-12-1 2 7 42 18 89l20 86 51-13c28-7 249-58 491-115zm-495-226c0-5 27-120 60-257 33-136 60-252 60-257s-276-9-643-9h-642l-28 117c-15 64-26 117-24 119 2 1 1194 291 1210 293 4 0 7-2 7-6zm-1980-282c0-9 14-119 25-203l5-38h-100c-55 0-100 3-100 6 0 18 145 244 156 244 8 0 14-4 14-9zm3239-110c39-66 71-122 71-125s-74-6-165-6-165 3-165 8c0 4 12 60 27 125l27 117h67 66l72-119zm155-373c3-35 40-733 81-1553s76-1511 78-1537l4-48h-1987-1987l4 48c2 26 37 717 78 1537s78 1518 81 1553l6 62h1818 1818l6-62z"/><path d="m1850 3209c-168-32-260-248-169-395 24-39 82-92 114-104 23-9 23-10 27-242 4-223 5-236 32-313 85-248 285-432 534-492 88-21 256-21 344 0 249 60 449 244 534 492 27 77 28 90 32 312l4 233 34 16c42 20 101 85 121 133 24 55 21 159-6 214-26 53-87 112-140 134-46 20-156 20-202 0-199-83-215-381-26-479l39-19-4-207c-5-237-17-291-88-400-225-349-715-349-940 0-71 109-83 164-88 400l-4 207 39 19c85 44 132 127 133 232 0 175-145 292-320 259z"/></g></svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab-bestseller">
+                        <div class="product-grid">
+                            <t t-foreach="env['product.template'].sudo().search([('is_published', '=', True)], limit=8, order='website_sequence')" t-as="product">
+                                <div class="product-grid-item">
+                                    <div class="product-loop">
+                                        <div class="product-inner">
+                                            <div class="proloop-image">
+                                                <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                    <div class="pro-sale"><span>-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span></div>
+                                                </t>
+                                                <div class="product--image">
+                                                    <a t-att-href="'/shop/%s' % product.id" class="d-block">
+                                                        <img src="/my_custom/theme_evo_fashion/static/src/img/shopping.webp" alt="Product" style="width: 100%; height: 100%; object-fit: contain;"/>
+                                                    </a>
+                                                </div>
+                                                <div class="quickview-product">
+                                                    <a class="icon-quickview" t-att-href="'/shop/%s' % product.id" title="Xem nhanh" name="icon quickview">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                            <circle cx="12" cy="12" r="3"/>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="setWishlist btn-views btn-circle" title="Thêm vào yêu thích">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="proloop-detail">
+                                                <h3><a t-att-href="'/shop/%s' % product.id" t-esc="product.name"/></h3>
+                                                <div class="wrapper-action-loop">
+                                                    <p class="proloop--price">
+                                                        <span class="price" t-esc="'%s₫' % product.list_price"/>
+                                                        <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                            <span class="price-del" t-esc="'%s₫' % product.compare_list_price"/>
+                                                            <span class="pro-percent">-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span>
+                                                        </t>
+                                                    </p>
+                                                    <div class="proloop-actions">
+                                                        <button type="button" class="btn-proloop-cart add-to-cart" title="Thêm vào giỏ">
+                                                            <span class="btnadd">Thêm vào giỏ</span>
+                                                            <span class="btnico" title="Thêm vào giỏ">
+                                                                <svg width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 512) scale(.1 -.1)"><path d="m2371 5100c-150-40-306-141-387-248l-35-48-492-58c-271-32-501-63-512-69-31-16-44-39-45-75 0-32 54-516 64-573 5-25 3-27-44-31-27-3-56-11-65-18s-78-117-155-245l-139-232-86-1660c-47-913-85-1692-85-1730 0-60 3-73 23-91l23-22h2125 2126l21 23c18 19 22 35 22 92 0 37-38 815-85 1728l-86 1660-139 232c-77 128-147 238-156 246-11 9-49 15-106 18-86 3-90 4-84 25 3 11 18 74 33 138 29 128 26 152-19 182-13 8-190 54-393 101-204 47-380 90-391 94-14 6-24 22-28 45-11 60-92 208-153 281-76 91-209 181-324 220-73 25-102 29-219 32-111 2-148-1-209-17zm318-176c139-34 279-140 353-265 21-34 36-64 34-66s-51 8-110 22c-113 28-152 27-180-4-8-9-34-96-56-192-23-95-43-182-46-191-4-14-72-44-80-35-1 1-19 139-39 306-19 167-40 311-44 320-21 39-55 45-163 33-56-7-103-10-106-7-8 8 127 68 183 81 72 18 178 17 254-2zm-329-258c0-2 14-117 30-256 17-139 27-256 23-260s-190-51-413-104c-308-74-410-102-427-118-31-29-30-70 7-220 17-67 30-128 30-135 0-10-45-13-203-13h-203l-56 478c-31 262-56 478-55 478 1 1 283 36 627 77s628 75 633 76c4 0 7-1 7-3zm1105-357c242-56 444-105 449-110 6-5-20-134-64-324l-74-315h-246-246l-82 343c-72 301-85 345-107 365-31 26-65 28-147 6-33-8-61-14-63-12-1 2 7 42 18 89l20 86 51-13c28-7 249-58 491-115zm-495-226c0-5 27-120 60-257 33-136 60-252 60-257s-276-9-643-9h-642l-28 117c-15 64-26 117-24 119 2 1 1194 291 1210 293 4 0 7-2 7-6zm-1980-282c0-9 14-119 25-203l5-38h-100c-55 0-100 3-100 6 0 18 145 244 156 244 8 0 14-4 14-9zm3239-110c39-66 71-122 71-125s-74-6-165-6-165 3-165 8c0 4 12 60 27 125l27 117h67 66l72-119zm155-373c3-35 40-733 81-1553s76-1511 78-1537l4-48h-1987-1987l4 48c2 26 37 717 78 1537s78 1518 81 1553l6 62h1818 1818l6-62z"/><path d="m1850 3209c-168-32-260-248-169-395 24-39 82-92 114-104 23-9 23-10 27-242 4-223 5-236 32-313 85-248 285-432 534-492 88-21 256-21 344 0 249 60 449 244 534 492 27 77 28 90 32 312l4 233 34 16c42 20 101 85 121 133 24 55 21 159-6 214-26 53-87 112-140 134-46 20-156 20-202 0-199-83-215-381-26-479l39-19-4-207c-5-237-17-291-88-400-225-349-715-349-940 0-71 109-83 164-88 400l-4 207 39 19c85 44 132 127 133 232 0 175-145 292-320 259z"/></g></svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab-sale">
+                        <div class="product-grid">
+                            <t t-foreach="env['product.template'].sudo().search([('is_published', '=', True), ('compare_list_price', '>', 0)], limit=8, order='website_sequence')" t-as="product">
+                                <div class="product-grid-item">
+                                    <div class="product-loop">
+                                        <div class="product-inner">
+                                            <div class="proloop-image">
+                                                <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                    <div class="pro-sale"><span>-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span></div>
+                                                </t>
+                                                <div class="product--image">
+                                                    <a t-att-href="'/shop/%s' % product.id" class="d-block">
+                                                        <img src="/my_custom/theme_evo_fashion/static/src/img/shopping.webp" alt="Product" style="width: 100%; height: 100%; object-fit: contain;"/>
+                                                    </a>
+                                                </div>
+                        <div class="quickview-product">
+                            <a class="icon-quickview" t-att-href="'/shop/%s' % product.id" title="Xem nhanh" name="icon quickview">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="setWishlist btn-views btn-circle" title="Thêm vào yêu thích">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </a>
+                        </div>
+                                            </div>
+                                            <div class="proloop-detail">
+                                                <h3><a t-att-href="'/shop/%s' % product.id" t-esc="product.name"/></h3>
+                                                <div class="wrapper-action-loop">
+                                                    <p class="proloop--price">
+                                                        <span class="price" t-esc="'%s₫' % product.list_price"/>
+                                                        <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                            <span class="price-del" t-esc="'%s₫' % product.compare_list_price"/>
+                                                            <span class="pro-percent">-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span>
+                                                        </t>
+                                                    </p>
+                                                    <div class="proloop-actions">
+                                                        <button type="button" class="btn-proloop-cart add-to-cart" title="Thêm vào giỏ">
+                                                            <span class="btnadd">Thêm vào giỏ</span>
+                                                            <span class="btnico" title="Thêm vào giỏ">
+                                                                <svg width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 512) scale(.1 -.1)"><path d="m2371 5100c-150-40-306-141-387-248l-35-48-492-58c-271-32-501-63-512-69-31-16-44-39-45-75 0-32 54-516 64-573 5-25 3-27-44-31-27-3-56-11-65-18s-78-117-155-245l-139-232-86-1660c-47-913-85-1692-85-1730 0-60 3-73 23-91l23-22h2125 2126l21 23c18 19 22 35 22 92 0 37-38 815-85 1728l-86 1660-139 232c-77 128-147 238-156 246-11 9-49 15-106 18-86 3-90 4-84 25 3 11 18 74 33 138 29 128 26 152-19 182-13 8-190 54-393 101-204 47-380 90-391 94-14 6-24 22-28 45-11 60-92 208-153 281-76 91-209 181-324 220-73 25-102 29-219 32-111 2-148-1-209-17zm318-176c139-34 279-140 353-265 21-34 36-64 34-66s-51 8-110 22c-113 28-152 27-180-4-8-9-34-96-56-192-23-95-43-182-46-191-4-14-72-44-80-35-1 1-19 139-39 306-19 167-40 311-44 320-21 39-55 45-163 33-56-7-103-10-106-7-8 8 127 68 183 81 72 18 178 17 254-2zm-329-258c0-2 14-117 30-256 17-139 27-256 23-260s-190-51-413-104c-308-74-410-102-427-118-31-29-30-70 7-220 17-67 30-128 30-135 0-10-45-13-203-13h-203l-56 478c-31 262-56 478-55 478 1 1 283 36 627 77s628 75 633 76c4 0 7-1 7-3zm1105-357c242-56 444-105 449-110 6-5-20-134-64-324l-74-315h-246-246l-82 343c-72 301-85 345-107 365-31 26-65 28-147 6-33-8-61-14-63-12-1 2 7 42 18 89l20 86 51-13c28-7 249-58 491-115zm-495-226c0-5 27-120 60-257 33-136 60-252 60-257s-276-9-643-9h-642l-28 117c-15 64-26 117-24 119 2 1 1194 291 1210 293 4 0 7-2 7-6zm-1980-282c0-9 14-119 25-203l5-38h-100c-55 0-100 3-100 6 0 18 145 244 156 244 8 0 14-4 14-9zm3239-110c39-66 71-122 71-125s-74-6-165-6-165 3-165 8c0 4 12 60 27 125l27 117h67 66l72-119zm155-373c3-35 40-733 81-1553s76-1511 78-1537l4-48h-1987-1987l4 48c2 26 37 717 78 1537s78 1518 81 1553l6 62h1818 1818l6-62z"/><path d="m1850 3209c-168-32-260-248-169-395 24-39 82-92 114-104 23-9 23-10 27-242 4-223 5-236 32-313 85-248 285-432 534-492 88-21 256-21 344 0 249 60 449 244 534 492 27 77 28 90 32 312l4 233 34 16c42 20 101 85 121 133 24 55 21 159-6 214-26 53-87 112-140 134-46 20-156 20-202 0-199-83-215-381-26-479l39-19-4-207c-5-237-17-291-88-400-225-349-715-349-940 0-71 109-83 164-88 400l-4 207 39 19c85 44 132 127 133 232 0 175-145 292-320 259z"/></g></svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Blog Grid                           -->
+    <!-- ============================================ -->
+    <template id="s_blog_grid" name="Blog Grid">
+        <section class="s_blog_grid" data-name="Blog Grid">
+            <div class="container">
+                <h2 class="section-title text-center">TIN TỨC NỔI BẬT</h2>
+                <div class="blog-grid">
+                    <t t-foreach="env['blog.post'].sudo().search([('is_published', '=', True)], limit=3)" t-as="post">
+                        <div class="blog-grid-item">
+                            <div class="blog-card card h-100 border-0">
+                                <div class="blog-image-container position-relative overflow-hidden">
+                                    <a t-att-href="'/blog/%s/%s' % (post.blog_id.id, post.id)" class="d-block">
+                                        <div class="blog-placeholder-img" t-att-style="'background-color: %s;' % ['#8e8270', '#252a2b', '#193d87'][post_index % 3]">
+                                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+                                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                                <polyline points="22,6 12,13 2,6"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <span class="blog-date">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px;">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6"/>
+                                            <line x1="8" y1="2" x2="8" y2="6"/>
+                                            <line x1="3" y1="10" x2="21" y2="10"/>
+                                        </svg>
+                                        <t t-esc="post.create_date.strftime('%d/%m/%Y')"/>
+                                    </span>
+                                    <h5 class="blog-title">
+                                        <a t-att-href="'/blog/%s/%s' % (post.blog_id.id, post.id)" class="text-decoration-none" t-esc="post.name"/>
+                                    </h5>
+                                    <p class="blog-excerpt" t-esc="post.subtitle or ''"/>
+                                    <a t-att-href="'/blog/%s/%s' % (post.blog_id.id, post.id)" class="blog-read-more">Đọc thêm 
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle;">
+                                            <line x1="5" y1="12" x2="19" y2="12"/>
+                                            <polyline points="12 5 19 12 12 19"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Service Features                    -->
+    <!-- ============================================ -->
+    <template id="s_service_features" name="Service Features">
+        <section class="s_service_features" data-name="Service Features">
+            <div class="container">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="1" y="3" width="15" height="13"/>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                                <circle cx="5.5" cy="18.5" r="2.5"/>
+                                <circle cx="18.5" cy="18.5" r="2.5"/>
+                            </svg>
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Miễn Phí Vận Chuyển</h5>
+                            <p class="service-desc">Cho đơn hàng từ 300k</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="1 4 1 10 7 10"/>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                            </svg>
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Đổi Trả 30 Ngày</h5>
+                            <p class="service-desc">Đổi trả miễn phí trong 30 ngày</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                            </svg>
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Hotline: 1900 6789</h5>
+                            <p class="service-desc">8H30 - 22H30 hàng ngày</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Showroom</h5>
+                            <p class="service-desc">10+ showroom toàn quốc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Coupon Section                      -->
+    <!-- ============================================ -->
+    <template id="s_coupon_section" name="Coupon Section">
+        <section class="s_coupon_section" data-name="Coupon Section">
+            <div class="container">
+                <h2 class="section-title text-center">MÃ GIẢM GIÁ</h2>
+                <div class="coupon-grid">
+                    <div class="coupon-card">
+                        <div class="coupon-left">
+                            <div class="coupon-discount">MIỄN PHÍ<br/>VẬN CHUYỂN</div>
+                            <div class="coupon-condition">Đơn từ 300k</div>
+                        </div>
+                        <div class="coupon-right">
+                            <div class="coupon-code">A87TYRT55</div>
+                            <div class="coupon-desc">Áp dụng cho đơn từ 300.000₫</div>
+                            <button class="btn-copy-coupon" data-code="A87TYRT55">SAO CHÉP</button>
+                        </div>
+                    </div>
+                    <div class="coupon-card">
+                        <div class="coupon-left">
+                            <div class="coupon-discount">GIẢM 20%</div>
+                            <div class="coupon-condition">Đơn từ 200k</div>
+                        </div>
+                        <div class="coupon-right">
+                            <div class="coupon-code">QH5G8J0Y</div>
+                            <div class="coupon-desc">Áp dụng cho đơn từ 200.000₫</div>
+                            <button class="btn-copy-coupon" data-code="QH5G8J0Y">SAO CHÉP</button>
+                        </div>
+                    </div>
+                    <div class="coupon-card">
+                        <div class="coupon-left">
+                            <div class="coupon-discount">GIẢM<br/>50K</div>
+                            <div class="coupon-condition">Đơn từ 500k</div>
+                        </div>
+                        <div class="coupon-right">
+                            <div class="coupon-code">FT45YUO8H</div>
+                            <div class="coupon-desc">Áp dụng cho đơn từ 500.000₫</div>
+                            <button class="btn-copy-coupon" data-code="FT45YUO8H">SAO CHÉP</button>
+                        </div>
+                    </div>
+                    <div class="coupon-card">
+                        <div class="coupon-left">
+                            <div class="coupon-discount">GIẢM 10%</div>
+                            <div class="coupon-condition">Đơn từ 100k</div>
+                        </div>
+                        <div class="coupon-right">
+                            <div class="coupon-code">A789UYT</div>
+                            <div class="coupon-desc">Áp dụng cho đơn từ 100.000₫</div>
+                            <button class="btn-copy-coupon" data-code="A789UYT">SAO CHÉP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Collection (You May Like)           -->
+    <!-- ============================================ -->
+    <template id="s_collection" name="Collection">
+        <section class="s_collection section-home-collection" data-name="Collection">
+            <div class="container container-pd">
+                <div class="sectionHeading">
+                    <h3>
+                        <a href="/shop" title="Có Thể Bạn Thích">
+                            Có Thể Bạn Thích
+                        </a>
+                    </h3>
+                </div>
+                <div class="sectionContent">
+                    <div class="list-collection row">
+                    <t t-foreach="env['product.template'].sudo().search([('is_published', '=', True)], limit=8, order='website_sequence desc')" t-as="product">
+                        <div class="collection-item">
+                            <div class="product-loop">
+                                <div class="product-inner">
+                                    <div class="proloop-image">
+                                        <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                            <div class="pro-sale"><span>-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span></div>
+                                        </t>
+                                        <div class="product--image">
+                                            <a t-att-href="'/shop/%s' % product.id" class="d-block">
+                                                <img src="/my_custom/theme_evo_fashion/static/src/img/shopping.webp" alt="Product" style="width: 100%; height: 100%; object-fit: contain;"/>
+                                            </a>
+                                        </div>
+                                        <div class="quickview-product">
+                                            <a class="icon-quickview" t-att-href="'/shop/%s' % product.id" title="Xem nhanh" name="icon quickview">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                    <circle cx="12" cy="12" r="3"/>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:void(0)" class="setWishlist btn-views btn-circle" title="Thêm vào yêu thích">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="proloop-detail">
+                                        <h3><a t-att-href="'/shop/%s' % product.id" t-esc="product.name"/></h3>
+                                        <div class="wrapper-action-loop">
+                                            <p class="proloop--price">
+                                                <span class="price" t-esc="'%s₫' % product.list_price"/>
+                                                <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                    <span class="price-del" t-esc="'%s₫' % product.compare_list_price"/>
+                                                    <span class="pro-percent">-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span>
+                                                </t>
+                                            </p>
+                                            <div class="proloop-actions">
+                                                <button type="button" class="btn-proloop-cart add-to-cart" title="Thêm vào giỏ">
+                                                    <span class="btnadd">Thêm vào giỏ</span>
+                                                    <span class="btnico" title="Thêm vào giỏ">
+                                                        <svg width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 512) scale(.1 -.1)"><path d="m2371 5100c-150-40-306-141-387-248l-35-48-492-58c-271-32-501-63-512-69-31-16-44-39-45-75 0-32 54-516 64-573 5-25 3-27-44-31-27-3-56-11-65-18s-78-117-155-245l-139-232-86-1660c-47-913-85-1692-85-1730 0-60 3-73 23-91l23-22h2125 2126l21 23c18 19 22 35 22 92 0 37-38 815-85 1728l-86 1660-139 232c-77 128-147 238-156 246-11 9-49 15-106 18-86 3-90 4-84 25 3 11 18 74 33 138 29 128 26 152-19 182-13 8-190 54-393 101-204 47-380 90-391 94-14 6-24 22-28 45-11 60-92 208-153 281-76 91-209 181-324 220-73 25-102 29-219 32-111 2-148-1-209-17zm318-176c139-34 279-140 353-265 21-34 36-64 34-66s-51 8-110 22c-113 28-152 27-180-4-8-9-34-96-56-192-23-95-43-182-46-191-4-14-72-44-80-35-1 1-19 139-39 306-19 167-40 311-44 320-21 39-55 45-163 33-56-7-103-10-106-7-8 8 127 68 183 81 72 18 178 17 254-2zm-329-258c0-2 14-117 30-256 17-139 27-256 23-260s-190-51-413-104c-308-74-410-102-427-118-31-29-30-70 7-220 17-67 30-128 30-135 0-10-45-13-203-13h-203l-56 478c-31 262-56 478-55 478 1 1 283 36 627 77s628 75 633 76c4 0 7-1 7-3zm1105-357c242-56 444-105 449-110 6-5-20-134-64-324l-74-315h-246-246l-82 343c-72 301-85 345-107 365-31 26-65 28-147 6-33-8-61-14-63-12-1 2 7 42 18 89l20 86 51-13c28-7 249-58 491-115zm-495-226c0-5 27-120 60-257 33-136 60-252 60-257s-276-9-643-9h-642l-28 117c-15 64-26 117-24 119 2 1 1194 291 1210 293 4 0 7-2 7-6zm-1980-282c0-9 14-119 25-203l5-38h-100c-55 0-100 3-100 6 0 18 145 244 156 244 8 0 14-4 14-9zm3239-110c39-66 71-122 71-125s-74-6-165-6-165 3-165 8c0 4 12 60 27 125l27 117h67 66l72-119zm155-373c3-35 40-733 81-1553s76-1511 78-1537l4-48h-1987-1987l4 48c2 26 37 717 78 1537s78 1518 81 1553l6 62h1818 1818l6-62z"/><path d="m1850 3209c-168-32-260-248-169-395 24-39 82-92 114-104 23-9 23-10 27-242 4-223 5-236 32-313 85-248 285-432 534-492 88-21 256-21 344 0 249 60 449 244 534 492 27 77 28 90 32 312l4 233 34 16c42 20 101 85 121 133 24 55 21 159-6 214-26 53-87 112-140 134-46 20-156 20-202 0-199-83-215-381-26-479l39-19-4-207c-5-237-17-291-88-400-225-349-715-349-940 0-71 109-83 164-88 400l-4 207 39 19c85 44 132 127 133 232 0 175-145 292-320 259z"/></g></svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                    </div>
+                    <div class="collection-footer">
+                        <a href="/shop" class="btn btn-collection-more">Xem Tất Cả</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Handmade Collection                 -->
+    <!-- ============================================ -->
+    <template id="s_handmade_collection" name="Handmade Collection">
+        <section class="s_handmade_collection section-product-big" data-name="Handmade Collection">
+            <div class="container">
+                <div class="box_index_product">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-md-12">
+                            <div class="handmade-banner">
+                                <a href="/shop?category=do-handmade-dan-len">
+                                    <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/home_collection_1_img.jpg?v=1370" alt="Bộ Sưu Tập Handmade"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-9 col-md-12">
+                            <div class="box_content">
+                                <div class="sectionHeading">
+                                    <h3>
+                                        <a href="/shop?category=do-handmade-dan-len" title="Bộ Sưu Tập Handmade">
+                                            Bộ Sưu Tập Handmade
+                                        </a>
+                                    </h3>
+                                    <div class="descrip_content">
+                                        Chúng tôi luôn luôn cập nhật những bộ sưu tập bắt kịp theo xu hướng của thời đại
+                                    </div>
+                                </div>
+                                <div class="sectionContent">
+                                    <div class="slider-product-one">
+                                        <t t-foreach="env['product.template'].sudo().search([('is_published', '=', True)], limit=6, order='website_sequence desc')" t-as="product">
+                                            <div class="item-products">
+                                                <div class="product-loop">
+                                                    <div class="product-inner">
+                                                        <div class="proloop-image">
+                                                            <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                                <div class="pro-sale"><span>-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span></div>
+                                                            </t>
+                                                            <div class="product--image">
+                                                                <a t-att-href="'/shop/%s' % product.id" class="d-block">
+                                                                    <img src="/my_custom/theme_evo_fashion/static/src/img/shopping.webp" alt="Product" style="width: 100%; height: 100%; object-fit: contain;"/>
+                                                                </a>
+                                                            </div>
+                                                            <div class="quickview-product">
+                                                                <a class="icon-quickview" t-att-href="'/shop/%s' % product.id" title="Xem nhanh" name="icon quickview">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                                        <circle cx="12" cy="12" r="3"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="javascript:void(0)" class="setWishlist btn-views btn-circle" title="Thêm vào yêu thích">
+                                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="proloop-detail">
+                                                            <h3><a t-att-href="'/shop/%s' % product.id" t-esc="product.name"/></h3>
+                                                            <div class="wrapper-action-loop">
+                                                                <p class="proloop--price">
+                                                                    <span class="price" t-esc="'%s₫' % product.list_price"/>
+                                                                    <t t-if="product.compare_list_price and product.compare_list_price > product.list_price">
+                                                                        <span class="price-del" t-esc="'%s₫' % product.compare_list_price"/>
+                                                                        <span class="pro-percent">-<t t-esc="int((product.compare_list_price - product.list_price) / product.compare_list_price * 100)"/>%</span>
+                                                                    </t>
+                                                                </p>
+                                                                <div class="proloop-actions">
+                                                                    <button type="button" class="btn-proloop-cart add-to-cart" title="Thêm vào giỏ">
+                                                                        <span class="btnadd">Thêm vào giỏ</span>
+                                                                        <span class="btnico" title="Thêm vào giỏ">
+                                                                            <svg width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 512) scale(.1 -.1)"><path d="m2371 5100c-150-40-306-141-387-248l-35-48-492-58c-271-32-501-63-512-69-31-16-44-39-45-75 0-32 54-516 64-573 5-25 3-27-44-31-27-3-56-11-65-18s-78-117-155-245l-139-232-86-1660c-47-913-85-1692-85-1730 0-60 3-73 23-91l23-22h2125 2126l21 23c18 19 22 35 22 92 0 37-38 815-85 1728l-86 1660-139 232c-77 128-147 238-156 246-11 9-49 15-106 18-86 3-90 4-84 25 3 11 18 74 33 138 29 128 26 152-19 182-13 8-190 54-393 101-204 47-380 90-391 94-14 6-24 22-28 45-11 60-92 208-153 281-76 91-209 181-324 220-73 25-102 29-219 32-111 2-148-1-209-17zm318-176c139-34 279-140 353-265 21-34 36-64 34-66s-51 8-110 22c-113 28-152 27-180-4-8-9-34-96-56-192-23-95-43-182-46-191-4-14-72-44-80-35-1 1-19 139-39 306-19 167-40 311-44 320-21 39-55 45-163 33-56-7-103-10-106-7-8 8 127 68 183 81 72 18 178 17 254-2zm-329-258c0-2 14-117 30-256 17-139 27-256 23-260s-190-51-413-104c-308-74-410-102-427-118-31-29-30-70 7-220 17-67 30-128 30-135 0-10-45-13-203-13h-203l-56 478c-31 262-56 478-55 478 1 1 283 36 627 77s628 75 633 76c4 0 7-1 7-3zm1105-357c242-56 444-105 449-110 6-5-20-134-64-324l-74-315h-246-246l-82 343c-72 301-85 345-107 365-31 26-65 28-147 6-33-8-61-14-63-12-1 2 7 42 18 89l20 86 51-13c28-7 249-58 491-115zm-495-226c0-5 27-120 60-257 33-136 60-252 60-257s-276-9-643-9h-642l-28 117c-15 64-26 117-24 119 2 1 1194 291 1210 293 4 0 7-2 7-6zm-1980-282c0-9 14-119 25-203l5-38h-100c-55 0-100 3-100 6 0 18 145 244 156 244 8 0 14-4 14-9zm3239-110c39-66 71-122 71-125s-74-6-165-6-165 3-165 8c0 4 12 60 27 125l27 117h67 66l72-119zm155-373c3-35 40-733 81-1553s76-1511 78-1537l4-48h-1987-1987l4 48c2 26 37 717 78 1537s78 1518 81 1553l6 62h1818 1818l6-62z"/><path d="m1850 3209c-168-32-260-248-169-395 24-39 82-92 114-104 23-9 23-10 27-242 4-223 5-236 32-313 85-248 285-432 534-492 88-21 256-21 344 0 249 60 449 244 534 492 27 77 28 90 32 312l4 233 34 16c42 20 101 85 121 133 24 55 21 159-6 214-26 53-87 112-140 134-46 20-156 20-202 0-199-83-215-381-26-479l39-19-4-207c-5-237-17-291-88-400-225-349-715-349-940 0-71 109-83 164-88 400l-4 207 39 19c85 44 132 127 133 232 0 175-145 292-320 259z"/></g></svg>
+                                                                        </span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Bottom Banner                       -->
+    <!-- ============================================ -->
+    <template id="s_bottom_banner" name="Bottom Banner">
+        <section class="s_bottom_banner" data-name="Bottom Banner">
+            <div class="container">
+                <div class="bottom-banner-grid">
+                    <div class="bottom-banner-item banner-image-top">
+                        <div class="bottom-banner-image">
+                            <a href="/shop">
+                                <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_banner_bottom_desktop_1.jpg?v=1370" alt="Đồ Len Nữ Độc Quyền"/>
+                            </a>
+                        </div>
+                        <div class="bottom-banner-content">
+                            <span class="banner-tag">Độc Quyền</span>
+                            <h3 class="banner-title">ĐỒ LEN NỮ ĐỘC QUYỀN</h3>
+                            <p class="banner-desc">Ngày nay, thời trang len nữ không chỉ dừng lại ở việc giữ ấm mà còn trở thành điểm nhấn tinh tế trong phong cách sống hiện đại. Trevi Style mang đến bộ sưu tập đồ len nữ đa dạng về kiểu dáng, màu sắc và chất liệu, giúp phái đẹp luôn tự tin và cuốn hút trong mọi khoảnh khắc.</p>
+                            <a href="/shop" class="btn btn-banner">Xem ngay</a>
+                        </div>
+                    </div>
+                    <div class="bottom-banner-item banner-content-top">
+                        <div class="bottom-banner-content">
+                            <span class="banner-tag">Phụ Kiện Len</span>
+                            <h3 class="banner-title">KHĂN – MŨ – GĂNG TAY LEN</h3>
+                            <p class="banner-desc">Các sản phẩm đồ len tại Trevi Style được thiết kế theo phong cách tối giản – thanh lịch – dễ phối đồ, phù hợp với nhiều hoàn cảnh: đi làm, dạo phố hay du lịch mùa lạnh.</p>
+                            <a href="/shop" class="btn btn-banner">Xem Thêm</a>
+                        </div>
+                        <div class="bottom-banner-image">
+                            <a href="/shop">
+                                <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_banner_bottom_desktop_2.jpg?v=1370" alt="Khăn Mũ Găng Tay Len"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Instagram Feed                      -->
+    <!-- ============================================ -->
+    <template id="s_instagram" name="Instagram Feed">
+        <section class="s_instagram" data-name="Instagram Feed">
+            <div class="container-fluid">
+                <div class="section-heading">
+                    <h2 class="section-title text-center">@TreviStyleInstagram</h2>
+                    <p class="section-desc">Theo dõi để luôn cập nhật các bộ sưu tập mới và ưu đãi hấp dẫn.</p>
+                </div>
+                <div class="instagram-grid">
+                    <div class="instagram-item">
+                        <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/instagram_1_avatar.jpg?v=1370" alt="Instagram 1"/>
+                        <div class="instagram-overlay">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/instagram_2_avatar.jpg?v=1370" alt="Instagram 2"/>
+                        <div class="instagram-overlay">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/instagram_3_avatar.jpg?v=1370" alt="Instagram 3"/>
+                        <div class="instagram-overlay">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/instagram_4_avatar.jpg?v=1370" alt="Instagram 4"/>
+                        <div class="instagram-overlay">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/instagram_5_avatar.jpg?v=1370" alt="Instagram 5"/>
+                        <div class="instagram-overlay">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/instagram_6_avatar.jpg?v=1370" alt="Instagram 6"/>
+                        <div class="instagram-overlay">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-follow">
+                        <a href="#" class="btn-follow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            Follow Us
+                        </a>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Feedback / Testimonials             -->
+    <!-- ============================================ -->
+    <template id="s_feedback" name="Customer Feedback">
+        <section class="s_feedback" data-name="Customer Feedback">
+            <div class="container">
+                <h2 class="section-title text-center">ĐÁNH GIÁ KHÁCH HÀNG</h2>
+                <p class="text-center text-muted mb-4">Mỗi đánh giá là một mảnh ghép giúp chúng tôi hoàn thiện hơn</p>
+                <div class="feedback-grid">
+                    <div class="feedback-card">
+                        <span class="feedback-quote">"</span>
+                        <div class="feedback-content">
+                            Trevi Style có nhiều mẫu đồ len và phụ kiện rất xinh, phong cách hiện đại, dễ phối đồ. Chất len mềm, hoàn thiện đẹp, mặc lên rất ưng.
+                        </div>
+                        <div class="feedback-author">
+                            <div class="author-avatar">
+                                <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/feedback_1_avatar.jpg?v=1370" alt="Ngọc Anh"/>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Ngọc Anh</div>
+                                <div class="author-role">Nhà thiết kế</div>
+                                <div class="star-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <span class="feedback-quote">"</span>
+                        <div class="feedback-content">
+                            Mình mua mũ len và bao tay ở Trevi Style, form đẹp và giữ ấm tốt. Màu sắc đúng hình, đường đan chắc chắn, giao hàng nhanh.
+                        </div>
+                        <div class="feedback-author">
+                            <div class="author-avatar">
+                                <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/feedback_2_avatar.jpg?v=1370" alt="Minh Thư"/>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Minh Thư</div>
+                                <div class="author-role">Nhân viên văn phòng</div>
+                                    <div class="star-rating">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <span class="feedback-quote">"</span>
+                        <div class="feedback-content">
+                            Túi xách và phụ kiện len của Trevi Style thiết kế tinh tế, dễ dùng hằng ngày. Phù hợp nhiều phong cách từ đi làm đến đi chơi. Rất đáng để mua lại.
+                        </div>
+                        <div class="feedback-author">
+                            <div class="author-avatar">
+                                <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/feedback_3_avatar.jpg?v=1370" alt="Anna Luna"/>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Anna Luna</div>
+                                <div class="author-role">Tiktoker</div>
+                                    <div class="star-rating">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <span class="feedback-quote">"</span>
+                        <div class="feedback-content">
+                            Sản phẩm len của Trevi Style nhìn đơn giản nhưng rất có gu. Một địa chỉ mua đồ len và phụ kiện đáng tin để gắn bó lâu dài.
+                        </div>
+                        <div class="feedback-author">
+                            <div class="author-avatar">
+                                <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/feedback_4_avatar.jpg?v=1370" alt="Khánh Linh"/>
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Khánh Linh</div>
+                                <div class="author-role">Freelancer</div>
+                                    <div class="star-rating">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Intro / Brand Story                 -->
+    <!-- ============================================ -->
+    <template id="s_intro" name="Brand Intro">
+        <section class="s_intro" data-name="Brand Intro">
+            <div class="container">
+                <div class="intro-content">
+                    <span class="intro-tag">Về Trevi Style</span>
+                    <h2 class="intro-title">DỄ MẶC, DỄ PHỐI, ĐẸP THEO CÁCH CỦA BẠN</h2>
+                    <p class="intro-desc">
+                        Mỗi người phụ nữ đều sở hữu một phong cách riêng và xứng đáng được tự tin thể hiện cá tính của chính mình.
+                        Trevi Style tin rằng thời trang không chỉ để mặc đẹp, mà còn là cách để phụ nữ cảm thấy thoải mái, tự tin
+                        và là chính mình trong từng khoảnh khắc.
+                    </p>
+                    <p class="intro-desc">
+                        Trevi Style không chỉ là một thương hiệu thời trang, mà còn là lựa chọn cho phong cách sống nhẹ nhàng,
+                        tinh tế và bền vững — nơi vẻ đẹp đến từ sự giản đơn và cảm giác tự tin tự nhiên.
+                    </p>
+                    <div class="intro-cta">
+                        <a href="/about-us" class="btn-intro btn-primary-intro">Xem Chi Tiết</a>
+                        <a href="/shop" class="btn-intro btn-outline-intro">Mua Sắm Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Policy / Features                   -->
+    <!-- ============================================ -->
+    <template id="s_policy" name="Policy">
+        <section class="s_policy" data-name="Policy">
+            <div class="container">
+                <div class="policy-grid">
+                    <div class="policy-item">
+                        <div class="policy-icon">
+                            <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_policy_1.jpg?v=1370" alt="Hỗ trợ 24/7" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover;"/>
+                        </div>
+                        <h4 class="policy-title">Hỗ Trợ 24/7</h4>
+                        <p class="policy-desc">Hotline hỗ trợ 1900.6789</p>
+                    </div>
+                    <div class="policy-item">
+                        <div class="policy-icon">
+                            <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_policy_2.jpg?v=1370" alt="Giao hàng miễn phí" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover;"/>
+                        </div>
+                        <h4 class="policy-title">Giao Hàng Miễn Phí</h4>
+                        <p class="policy-desc">Thời gian giao hàng nhanh chóng, từ 3 - 5 ngày làm việc</p>
+                    </div>
+                    <div class="policy-item">
+                        <div class="policy-icon">
+                            <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_policy_3.jpg?v=1370" alt="Thanh toán đa dạng" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover;"/>
+                        </div>
+                        <h4 class="policy-title">Thanh Toán Đa Dạng</h4>
+                        <p class="policy-desc">Chấp nhận thanh toán COD, Momo, Banking</p>
+                    </div>
+                    <div class="policy-item">
+                        <div class="policy-icon">
+                            <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/img_item_policy_4.jpg?v=1370" alt="Đổi trả dễ dàng" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover;"/>
+                        </div>
+                        <h4 class="policy-title">Đổi Trả Dễ Dàng</h4>
+                        <p class="policy-desc">Thời gian trả hàng lên tới 30 ngày</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Back to Top                         -->
+    <!-- ============================================ -->
+    <template id="s_back_to_top" name="Back to Top">
+                        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="18 15 12 9 6 15"/>
+                            </svg>
+                        </button>
+    </template>
+
+    <!-- ============================================ -->
+    <!-- SNIPPET: Sidebar Cart                        -->
+    <!-- ============================================ -->
+    <template id="s_sidebar_cart" name="Sidebar Cart">
+        <div class="sidebar-cart-overlay" id="sidebarCartOverlay"/>
+        <div class="sidebar-cart" id="sidebarCart">
+            <div class="cart-header">
+                <h3 class="cart-title">GIỎ HÀNG</h3>
+                        <button class="cart-close" id="sidebarCartClose">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"/>
+                                <line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
+                        </button>
+            </div>
+            <div class="cart-body">
+                <div class="cart-empty">
+                    <div class="cart-banner">
+                        <img src="//cdn.hstatic.net/themes/200001113693/1001436626/14/cart_banner_image.jpg?v=1370" alt="Cart banner" style="width: 100%; border-radius: 8px; margin-bottom: 16px;"/>
+                    </div>
+                    <p class="cart-empty-text">Chưa có sản phẩm trong giỏ hàng</p>
+                    <div class="cart-empty-actions">
+                        <a href="/shop" class="btn btn-primary">Trở về trang sản phẩm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</odoo>

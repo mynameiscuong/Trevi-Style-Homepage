@@ -1,0 +1,282 @@
+// ============================================
+// Trevi Style - Collection (You May Like)
+// ============================================
+
+.s_collection,
+.section-home-collection {
+    padding: 50px 0;
+    background: $gray-50;
+
+    .container-pd {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .sectionHeading {
+        margin-bottom: 25px;
+
+        h3 {
+            font-size: $font-size-xl;
+            font-weight: $font-weight-bold;
+            color: $dark-color;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+
+            a {
+                color: $dark-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .list-collection {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        > .collection-item {
+            flex: 0 0 calc(20% - 12px);
+            min-width: 0;
+
+            @media (max-width: $breakpoint-lg) {
+                flex: 0 0 calc(33.333% - 10px);
+            }
+
+            @media (max-width: $breakpoint-md) {
+                flex: 0 0 calc(50% - 8px);
+            }
+
+            @media (max-width: $breakpoint-sm) {
+                flex: 0 0 calc(50% - 8px);
+            }
+        }
+    }
+
+    .product-loop {
+        background: $white;
+        border-radius: $product-card-radius;
+        overflow: hidden;
+        border: 1px solid $gray-200;
+        height: 100%;
+        transition: all $transition;
+
+        &:hover {
+            box-shadow: $product-card-hover-shadow;
+            border-color: transparent;
+
+            .quickview-product {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-50%, -50%);
+            }
+
+            .product--image img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .product-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proloop-image {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 1;
+
+        .product--image {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform $transition-slow;
+            }
+        }
+
+        .pro-sale {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            z-index: 10;
+
+            span {
+                display: inline-block;
+                padding: 3px 8px;
+                background: $accent-color;
+                color: $white;
+                font-size: $font-size-xs;
+                font-weight: $font-weight-bold;
+                border-radius: $border-radius-sm;
+            }
+        }
+
+        .quickview-product {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all $transition;
+            z-index: 5;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 34px;
+                height: 34px;
+                border-radius: $border-radius-circle;
+                background: $white;
+                color: $gray-700;
+                box-shadow: $shadow-sm;
+                transition: all $transition;
+                text-decoration: none;
+
+                &:hover {
+                    background: $primary-color;
+                    color: $white;
+                }
+
+                i {
+                    font-size: 14px;
+                }
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+
+    .proloop-detail {
+        padding: 12px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: $font-size-sm;
+            font-weight: $font-weight-medium;
+            margin-bottom: 6px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 34px;
+
+            a {
+                color: $gray-800;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .wrapper-action-loop {
+            margin-top: auto;
+
+            .proloop--price {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                flex-wrap: wrap;
+                margin-bottom: 8px;
+
+                .price {
+                    font-size: $font-size-base;
+                    font-weight: $font-weight-bold;
+                    color: $accent-color;
+                }
+
+                .price-del {
+                    font-size: $font-size-xs;
+                    color: $gray-500;
+                    text-decoration: line-through;
+                }
+
+                .pro-percent {
+                    font-size: $font-size-xs;
+                    font-weight: $font-weight-bold;
+                    color: $accent-color;
+                    background: rgba($accent-color, 0.1);
+                    padding: 1px 5px;
+                    border-radius: $border-radius-sm;
+                }
+            }
+
+            .proloop-actions {
+                .btn-proloop-cart {
+                    width: 100%;
+                    padding: 8px 12px;
+                    border: 1px solid $gray-200;
+                    border-radius: $border-radius-sm;
+                    background: $white;
+                    color: $gray-700;
+                    font-size: $font-size-xs;
+                    cursor: pointer;
+                    transition: all $transition;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+
+                    &:hover {
+                        background: $primary-color;
+                        border-color: $primary-color;
+                        color: $white;
+                    }
+
+                    .btnico {
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .collection-footer {
+        text-align: center;
+        margin-top: 30px;
+
+        .btn-collection-more {
+            display: inline-block;
+            padding: 10px 30px;
+            background: $primary-color;
+            color: $white;
+            border-radius: $border-radius;
+            text-decoration: none;
+            font-weight: $font-weight-medium;
+            transition: all $transition;
+
+            &:hover {
+                background: darken($primary-color, 10%);
+            }
+        }
+    }
+}

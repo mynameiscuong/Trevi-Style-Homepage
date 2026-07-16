@@ -1,0 +1,118 @@
+// ============================================
+// Trevi Style - Blog Grid (Enhanced)
+// ============================================
+
+.s_blog_enhanced {
+    padding: 50px 0;
+    background: $white;
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media (max-width: $breakpoint-md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .blog-card {
+        background: $white;
+        border-radius: $border-radius;
+        overflow: hidden;
+        transition: all $transition;
+        height: 100%;
+        border: 1px solid $gray-200;
+
+        &:hover {
+            box-shadow: $product-card-hover-shadow;
+            transform: translateY(-3px);
+            border-color: transparent;
+
+            .blog-image .blog-placeholder-img {
+                transform: scale(1.05);
+            }
+        }
+
+        .blog-image {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+
+            .blog-placeholder-img {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: transform $transition-slow;
+
+                i {
+                    font-size: 36px;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .blog-body {
+            padding: 16px;
+
+            .blog-date {
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+                font-size: $font-size-xs;
+                color: $gray-500;
+                margin-bottom: 8px;
+
+                i {
+                    color: $primary-color;
+                }
+            }
+
+            .blog-title {
+                font-size: $font-size-base;
+                font-weight: $font-weight-semibold;
+                margin-bottom: 8px;
+                line-height: 1.4;
+
+                a {
+                    color: $dark-color;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .blog-excerpt {
+                font-size: $font-size-sm;
+                color: $gray-600;
+                line-height: 1.6;
+                margin-bottom: 12px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .blog-read-more {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                font-size: $font-size-sm;
+                font-weight: $font-weight-semibold;
+                color: $primary-color;
+                transition: all $transition;
+
+                &:hover {
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}

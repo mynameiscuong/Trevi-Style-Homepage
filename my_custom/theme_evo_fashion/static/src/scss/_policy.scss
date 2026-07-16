@@ -1,0 +1,70 @@
+// ============================================
+// Trevi Style - Policy / Features
+// ============================================
+
+.s_policy {
+    padding: 60px 0;
+    background: $white;
+
+    @media (max-width: $breakpoint-md) {
+        padding: 30px 0;
+    }
+
+    .policy-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        @media (max-width: $breakpoint-lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .policy-item {
+        text-align: center;
+        padding: 20px;
+
+        .policy-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: $border-radius-circle;
+            background: rgba($primary-color, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            transition: all $transition;
+
+            i {
+                font-size: 28px;
+                color: $primary-color;
+            }
+        }
+
+        &:hover .policy-icon {
+            background: $primary-color;
+
+            i {
+                color: $white;
+            }
+        }
+
+        .policy-title {
+            font-size: $font-size-lg;
+            font-weight: $font-weight-semibold;
+            color: $dark-color;
+            margin-bottom: 8px;
+        }
+
+        .policy-desc {
+            font-size: $font-size-sm;
+            color: $gray-600;
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+}
